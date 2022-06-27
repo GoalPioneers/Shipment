@@ -1,12 +1,12 @@
     package kentvejrupmadsen.ship;
 
-    import kentvejrupmadsen.ship.configuration.ConfigurationStore;
-    import kentvejrupmadsen.ship.configuration.StoreFacade;
+    import kentvejrupmadsen.ship.persistence.configuration.ConfigurationStore;
+    import kentvejrupmadsen.ship.persistence.configuration.StoreFacade;
 
-    import kentvejrupmadsen.ship.interactive.Interaction;
-    import kentvejrupmadsen.ship.interactive.InteractiveConsole;
-    import kentvejrupmadsen.ship.parameters.ParameterConfiguration;
-    import kentvejrupmadsen.ship.parameters.ParameterFacade;
+    import kentvejrupmadsen.ship.application.interactive.Interaction;
+    import kentvejrupmadsen.ship.application.interactive.InteractiveConsole;
+    import kentvejrupmadsen.ship.application.parameters.ParameterConfiguration;
+    import kentvejrupmadsen.ship.application.parameters.ParameterFacade;
 
 
     /**

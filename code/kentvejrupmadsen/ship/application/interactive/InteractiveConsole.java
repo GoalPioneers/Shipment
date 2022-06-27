@@ -1,4 +1,4 @@
-	package kentvejrupmadsen.ship.interactive;
+	package kentvejrupmadsen.ship.application.interactive;
 	
 	
 	import kentvejrupmadsen.ship.StateController;

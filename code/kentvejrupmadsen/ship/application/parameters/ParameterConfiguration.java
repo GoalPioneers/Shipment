@@ -1,4 +1,4 @@
-    package kentvejrupmadsen.ship.parameters;
+    package kentvejrupmadsen.ship.application.parameters;
 
 
     import kentvejrupmadsen.ship.StateController;

@@ -1,4 +1,4 @@
-    package kentvejrupmadsen.ship.configuration;
+    package kentvejrupmadsen.ship.persistence.configuration;
 
 
     import kentvejrupmadsen.ship.StateController;

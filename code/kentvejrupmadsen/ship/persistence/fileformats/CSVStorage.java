@@ -1,4 +1,4 @@
-    package kentvejrupmadsen.ship.persistence;
+    package kentvejrupmadsen.ship.persistence.fileformats;
 
 
     public class CSVStorage
