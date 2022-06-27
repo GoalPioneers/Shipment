@@ -1,4 +1,4 @@
-    package kentvejrupmadsen.converter;
+    package kentvejrupmadsen.ship;
 
 
     public class StateController

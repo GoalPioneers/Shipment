@@ -1,10 +1,12 @@
-    package kentvejrupmadsen.converter;
+    package kentvejrupmadsen.ship;
 
-    import kentvejrupmadsen.converter.configuration.ConfigurationStore;
-    import kentvejrupmadsen.converter.configuration.StoreFacade;
+    import kentvejrupmadsen.ship.configuration.ConfigurationStore;
+    import kentvejrupmadsen.ship.configuration.StoreFacade;
 
-    import kentvejrupmadsen.converter.parameters.ParameterConfiguration;
-    import kentvejrupmadsen.converter.parameters.ParameterFacade;
+    import kentvejrupmadsen.ship.interactive.Interaction;
+    import kentvejrupmadsen.ship.interactive.InteractiveConsole;
+    import kentvejrupmadsen.ship.parameters.ParameterConfiguration;
+    import kentvejrupmadsen.ship.parameters.ParameterFacade;
 
 
     /**
@@ -30,6 +32,8 @@
         private ParameterFacade parameterInterpreter = null;
 
         private StoreFacade configurationStore = null;
+        
+        private Interaction actor = null;
 
         private String[] arguments = null;
 
@@ -42,19 +46,33 @@
          */
         public Program()
         {
-            this.setController(
-                    new StateController()
-            );
+            this.defaultConstruction();
         }
 
+        
         /**
          *
          * @param arguments
          */
         public Program( String[] arguments )
         {
-            super();
+            this.defaultConstruction();
             this.setArguments( arguments );
+        }
+    
+        
+        /**
+         *
+         */
+        private void defaultConstruction()
+        {
+            this.setActor(
+                    new InteractiveConsole()
+            );
+    
+            this.setController(
+                    new StateController()
+            );
         }
 
 
@@ -66,6 +84,10 @@
         {
             this.initialiseConfiguration();
             this.initialiseParameters();
+            
+            this.getActor().setState(
+                    this.getController()
+            );
         }
 
 
@@ -85,6 +107,7 @@
             this.getConfigurationStore().configure();
         }
 
+        
         /**
          *
          */
@@ -106,7 +129,10 @@
          */
         public void execution()
         {
-
+            while( this.getActor().isToContinue() )
+            {
+                this.getActor().userInput();
+            }
         }
 
         /**
@@ -119,6 +145,16 @@
 
 
         // Accessors
+        public Interaction getActor()
+        {
+            return this.actor;
+        }
+    
+        protected void setActor( InteractiveConsole actor )
+        {
+            this.actor = actor;
+        }
+    
         /**
          *
          * @return

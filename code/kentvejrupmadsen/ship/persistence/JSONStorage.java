@@ -1,4 +1,4 @@
-    package kentvejrupmadsen.converter.persistence;
+    package kentvejrupmadsen.ship.persistence;
 
 
     public class JSONStorage

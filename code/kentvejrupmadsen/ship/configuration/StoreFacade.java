@@ -1,7 +1,7 @@
-    package kentvejrupmadsen.converter.configuration;
+    package kentvejrupmadsen.ship.configuration;
 
 
-    import kentvejrupmadsen.converter.StateController;
+    import kentvejrupmadsen.ship.StateController;
 
     /**
      *

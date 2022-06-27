@@ -1,6 +1,6 @@
-    package kentvejrupmadsen.converter.parameters;
+    package kentvejrupmadsen.ship.parameters;
 
-    import kentvejrupmadsen.converter.StateController;
+    import kentvejrupmadsen.ship.StateController;
 
     public interface ParameterFacade
     {
