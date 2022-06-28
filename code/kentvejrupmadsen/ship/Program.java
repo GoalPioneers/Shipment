@@ -10,7 +10,7 @@
 
 
     /**
-     *
+     * @author Kent Madsen
      */
     public class Program
     {

@@ -4,7 +4,7 @@
     import kentvejrupmadsen.ship.StateController;
 
     /**
-     *
+     * @author Kent Madsen
      */
     public class ConfigurationStore
             implements StoreFacade

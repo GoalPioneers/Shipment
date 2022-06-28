@@ -5,7 +5,7 @@
 
 
     /**
-     *
+     * @author Kent Madsen
      */
     public class ParameterConfiguration
             implements ParameterFacade
