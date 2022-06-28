@@ -1,6 +1,10 @@
 	package kentvejrupmadsen.ship.application.commands;
+	
 
-	public class TaskProcess
+	/**
+	 * 
+	 */
+	public abstract class TaskProcess
 		extends CommandProcess
 	{
 	

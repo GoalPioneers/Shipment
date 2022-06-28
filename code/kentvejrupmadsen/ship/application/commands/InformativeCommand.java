@@ -1,6 +1,10 @@
 	package kentvejrupmadsen.ship.application.commands;
 	
-	public class InformativeCommand
+
+	/**
+	 * 
+	 */
+	public abstract class InformativeCommand
 		extends CommandProcess
 	{
 	

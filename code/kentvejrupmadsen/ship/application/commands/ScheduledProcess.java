@@ -1,6 +1,10 @@
 	package kentvejrupmadsen.ship.application.commands;
 	
-	public class ScheduledProcess
+
+	/**
+	 * 
+	 */
+	public abstract class ScheduledProcess
 		extends CommandProcess
 	{
 	

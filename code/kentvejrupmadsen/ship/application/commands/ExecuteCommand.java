@@ -1,7 +1,11 @@
 	package kentvejrupmadsen.ship.application.commands;
 	
-	public class ExecuteCommand
+
+	/**
+	 * 
+	 */
+	public abstract class ExecuteCommand
 		extends CommandProcess
 	{
-	
+		
 	}
