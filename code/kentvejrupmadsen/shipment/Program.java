@@ -1,16 +1,16 @@
-    package kentvejrupmadsen.ship;
+    package kentvejrupmadsen.shipment;
 
-    import kentvejrupmadsen.ship.configuration.ConfigurationStore;
-    import kentvejrupmadsen.ship.configuration.StoreFacade;
+    import kentvejrupmadsen.shipment.persistence.configuration.ConfigurationStore;
+    import kentvejrupmadsen.shipment.persistence.configuration.StoreFacade;
 
-    import kentvejrupmadsen.ship.interactive.Interaction;
-    import kentvejrupmadsen.ship.interactive.InteractiveConsole;
-    import kentvejrupmadsen.ship.parameters.ParameterConfiguration;
-    import kentvejrupmadsen.ship.parameters.ParameterFacade;
+    import kentvejrupmadsen.shipment.application.interactive.Interaction;
+    import kentvejrupmadsen.shipment.application.interactive.InteractiveConsole;
+    import kentvejrupmadsen.shipment.application.parameters.ParameterConfiguration;
+    import kentvejrupmadsen.shipment.application.parameters.ParameterFacade;
 
 
     /**
-     *
+     * @author Kent Madsen
      */
     public class Program
     {

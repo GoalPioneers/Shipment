@@ -1,11 +1,11 @@
-    package kentvejrupmadsen.ship.parameters;
+    package kentvejrupmadsen.shipment.application.parameters;
 
 
-    import kentvejrupmadsen.ship.StateController;
+    import kentvejrupmadsen.shipment.StateController;
 
 
     /**
-     *
+     * @author Kent Madsen
      */
     public class ParameterConfiguration
             implements ParameterFacade

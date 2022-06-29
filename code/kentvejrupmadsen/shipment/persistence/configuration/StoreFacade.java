@@ -1,10 +1,10 @@
-    package kentvejrupmadsen.ship.configuration;
+    package kentvejrupmadsen.shipment.persistence.configuration;
 
 
-    import kentvejrupmadsen.ship.StateController;
+    import kentvejrupmadsen.shipment.StateController;
 
     /**
-     *
+     * @author Kent Madsen
      */
     public interface StoreFacade
     {
