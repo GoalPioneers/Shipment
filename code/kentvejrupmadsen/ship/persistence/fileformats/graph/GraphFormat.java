@@ -1,4 +1,4 @@
-﻿package kentvejrupmadsen.ship.persistence.fileformats.graph;
+package kentvejrupmadsen.ship.persistence.fileformats.graph;
 
 /**
  * @author Kent Madsen

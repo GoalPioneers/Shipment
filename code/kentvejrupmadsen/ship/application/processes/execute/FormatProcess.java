@@ -1,4 +1,4 @@
-﻿	package kentvejrupmadsen.ship.application.processes.execute;
+	package kentvejrupmadsen.ship.application.processes.execute;
 	
 	import kentvejrupmadsen.ship.application.commands.ExecuteCommand;
 	

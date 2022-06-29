@@ -1,4 +1,4 @@
-﻿    package kentvejrupmadsen.ship.application.processes.informative;
+    package kentvejrupmadsen.ship.application.processes.informative;
     
     import kentvejrupmadsen.ship.application.commands.InformativeCommand;
 

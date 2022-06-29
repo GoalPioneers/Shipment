@@ -1,4 +1,4 @@
-﻿    package kentvejrupmadsen.ship.persistence.fileformats.flat;
+    package kentvejrupmadsen.ship.persistence.fileformats.flat;
 
     public interface FlatFormat 
     {
