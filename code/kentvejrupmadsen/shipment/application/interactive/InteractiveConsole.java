@@ -11,7 +11,7 @@
 			implements Interaction
 	{
 		/**
-		 * 
+		 * @author Kent Madsen
 		 */
 		public InteractiveConsole()
 		{
@@ -27,7 +27,7 @@
 		
 		// Code
 		/**
-		 * 
+		 * @author Kent Madsen
 		 */
 		@Override
 		public void userInput()
@@ -37,7 +37,7 @@
 		
 		// Accessors
 		/**
-		 * 
+		 * @author Kent Madsen
 		 * @param state
 		 */
 		@Override
@@ -48,7 +48,7 @@
 		
 		
 		/**
-		 * 
+		 * @author Kent Madsen
 		 * @return
 		 */
 		@Override
@@ -58,7 +58,7 @@
 		}
 		
 		/**
-		 * 
+		 * @author Kent Madsen
 		 * @param toContinue
 		 */
 		protected void setToContinue( boolean toContinue )

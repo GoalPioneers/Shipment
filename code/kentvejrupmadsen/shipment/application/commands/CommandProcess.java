@@ -8,11 +8,17 @@
 		
 		private String name = null;
 		
+		/**
+		 * @author Kent Madsen
+		 */
 		public final String getName()
 		{
 			return name;
 		}
 		
+		/**
+		 * @author Kent Madsen
+		 */
 		protected final void setName( String name )
 		{
 			this.name = name;

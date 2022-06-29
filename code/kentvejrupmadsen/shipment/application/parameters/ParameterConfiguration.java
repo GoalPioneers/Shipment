@@ -16,6 +16,9 @@
         private StateController state = null;
 
         // Code
+        /**
+         * @author Kent Madsen
+         */
         @Override
         public boolean configure()
         {
@@ -24,12 +27,18 @@
 
 
         // Accessors
+        /**
+         * @author Kent Madsen
+         */
         @Override
         public void setStateController( StateController controller )
         {
             this.state = controller;
         }
-
+        
+        /**
+         * @author Kent Madsen
+         */
         public StateController getState()
         {
             return state;
@@ -51,7 +60,7 @@
         }
 
         /**
-         *
+         * @author Kent Madsen
          * @param interpreter
          */
         public static void setInterpreter( ParameterConfiguration interpreter )

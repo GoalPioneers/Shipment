@@ -10,7 +10,7 @@
 		extends ExecuteCommand
 	{
 		/**
-		 * 
+		 * @author Kent Madsen
 		 */
 		public SearchProcess()
 		{

@@ -7,7 +7,7 @@
 public class PublicEntry 
 {
     /**
-     *
+     * @author Kent Madsen
      * @param args Console Arguments
      */
     public static void main( String[] args )

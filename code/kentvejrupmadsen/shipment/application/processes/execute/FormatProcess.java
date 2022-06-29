@@ -8,6 +8,9 @@
 	public class FormatProcess
 		extends ExecuteCommand
 	{
+		/**
+		 * @author Kent Madsen
+		 */
 		public FormatProcess()
 		{
 			super("format" );

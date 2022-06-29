@@ -1,5 +1,8 @@
-    package kentvejrupmadsen.shipment.persistence.fileformats.flat;
+package kentvejrupmadsen.shipment.persistence.fileformats.flat;
 
-    public interface FlatFormat 
-    {
-    }
+/**
+ * @author Kent Madsen
+ */
+public interface FlatFormat
+{
+}

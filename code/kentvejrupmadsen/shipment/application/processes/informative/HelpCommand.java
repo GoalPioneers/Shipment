@@ -8,6 +8,9 @@
     public class HelpCommand 
             extends InformativeCommand
     {
+        /**
+         * @author Kent Madsen
+         */
         public HelpCommand()
         {
             super("help" );

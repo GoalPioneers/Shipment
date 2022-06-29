@@ -8,7 +8,7 @@
 		extends CommandProcess
 	{
 		/**
-		 * 
+		 * @author Kent Madsen
 		 * @param commandName
 		 */
 		public TaskProcess( String commandName )

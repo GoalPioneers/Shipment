@@ -8,6 +8,9 @@ import kentvejrupmadsen.shipment.application.commands.ExecuteCommand;
 public class EncodeProcess
         extends ExecuteCommand
 {
+    /**
+     * @author Kent Madsen
+     */
     public EncodeProcess()
     {
         super( "encode" );
