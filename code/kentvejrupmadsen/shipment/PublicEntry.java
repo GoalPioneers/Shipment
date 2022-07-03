@@ -1,4 +1,4 @@
-﻿package kentvejrupmadsen.shipment;
+package kentvejrupmadsen.shipment;
 
 
 /**

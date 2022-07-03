@@ -1,6 +1,5 @@
     package kentvejrupmadsen.shipment.application.parameters;
 
-
     import kentvejrupmadsen.shipment.StateController;
 
 
@@ -10,9 +9,17 @@
     public class ParameterConfiguration
             implements ParameterFacade
     {
+        /**
+         * 
+         */
+        public ParameterConfiguration()
+        {
+            
+        }
 
         // Variables
         private static ParameterConfiguration interpreter = null;
+        
         private StateController state = null;
 
         // Code

@@ -2,7 +2,7 @@ package kentvejrupmadsen.shipment;
 
 
 import kentvejrupmadsen.shipment.persistence.configuration.ConfigurationStore;
-import kentvejrupmadsen.shipment.persistence.configuration.StoreFacade;
+import kentvejrupmadsen.shipment.persistence.configuration.template.StoreFacade;
 
 
 import kentvejrupmadsen.shipment.application.interactive.Interaction;
@@ -119,7 +119,7 @@ public class Program
     {
         while( this.getActor().isToContinue() )
         {
-            this.getActor().userInput();
+            this.getActor().askForUserInput();
         }
     }
     

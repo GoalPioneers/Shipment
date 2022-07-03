@@ -1,18 +1,23 @@
-	package kentvejrupmadsen.shipment.application.commands;
-	
-	
+package kentvejrupmadsen.shipment.application.commands;
+
+import kentvejrupmadsen.shipment.application.interactive.Interaction;
+
+
+/**
+ * @author Kent Madsen
+ */
+public abstract class ExecuteCommand
+		extends CommandProcess
+{
 	/**
 	 * @author Kent Madsen
+	 * @param commandName
+	 * @param actor
 	 */
-	public abstract class ExecuteCommand
-		extends CommandProcess
+	public ExecuteCommand( String commandName,
+	                       Interaction actor )
 	{
-		/**
-		 * @author Kent Madsen
-		 * @param commandName
-		 */
-		public ExecuteCommand( String commandName )
-		{
-			this.setName( commandName );
-		}
+		super( actor );
+		this.setName( commandName );
 	}
+}

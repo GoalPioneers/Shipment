@@ -1,18 +1,20 @@
-	package kentvejrupmadsen.shipment.application.processes.execute;
-	
-	import kentvejrupmadsen.shipment.application.commands.ExecuteCommand;
-	
+package kentvejrupmadsen.shipment.application.processes.execute;
+
+import kentvejrupmadsen.shipment.application.commands.ExecuteCommand;
+import kentvejrupmadsen.shipment.application.interactive.Interaction;
+
+
+/**
+ * @author Kent Madsen
+ */
+public class FormatProcess
+		extends ExecuteCommand
+{
 	/**
 	 * @author Kent Madsen
 	 */
-	public class FormatProcess
-		extends ExecuteCommand
+	public FormatProcess( Interaction actor )
 	{
-		/**
-		 * @author Kent Madsen
-		 */
-		public FormatProcess()
-		{
-			super("format" );
-		}
+		super("format", actor );
 	}
+}
