@@ -1,9 +1,9 @@
-    package kentvejrupmadsen.shipment.persistence.fileformats;
+package kentvejrupmadsen.shipment.persistence.fileformats;
 
-    /**
-     * @author Kent Madsen
-     */
-    public abstract class PersistenceStorage
-    {
-
-    }
+/**
+* @author Kent Madsen
+*/
+public abstract class PersistenceStorage
+{
+    
+}

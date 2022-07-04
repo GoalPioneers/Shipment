@@ -4,17 +4,11 @@ import kentvejrupmadsen.shipment.application.commands.InformativeCommand;
 import kentvejrupmadsen.shipment.application.interactive.Interaction;
 
 
-/**
- * @author Kent Madsen
- */
-public class HelpCommand
+public class LicenseCommand 
         extends InformativeCommand
 {
-    /**
-     * @author Kent Madsen
-     */
-    public HelpCommand( Interaction actor )
+    public LicenseCommand( Interaction actor )
     {
-        super("help", actor );
+        super("license", actor );
     }
 }
