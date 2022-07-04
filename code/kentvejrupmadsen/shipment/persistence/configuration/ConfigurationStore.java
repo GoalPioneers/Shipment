@@ -43,6 +43,7 @@ public class ConfigurationStore
         return false;
     }
     
+    
     /**
      *
      * @param idx
@@ -53,6 +54,7 @@ public class ConfigurationStore
     {
         return null;
     }
+    
     
     /**
      *
@@ -99,6 +101,17 @@ public class ConfigurationStore
     @Override
     public boolean compare( ConfigurationEntity A,
                             ConfigurationEntity B )
+    {
+        return false;
+    }
+    
+    
+    /**
+     * 
+     * @return
+     */
+    @Override
+    public boolean optimize() 
     {
         return false;
     }

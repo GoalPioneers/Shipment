@@ -65,4 +65,10 @@ public interface StoreFacade
                      ConfigurationEntity B );
     
     
+    /**
+     * 
+     * @return If it completed the task
+     */
+    boolean optimize();
+    
 }

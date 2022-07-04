@@ -4,6 +4,7 @@ import kentvejrupmadsen.shipment.application.interactive.Interaction;
 
 
 /**
+ * 
  * @author Kent Madsen
  */
 public abstract class CommandProcess
