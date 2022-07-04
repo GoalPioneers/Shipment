@@ -10,3 +10,6 @@
 [submodule "modules/Formatter.XML"]
 	path = modules/Formatter.XML
 	url = https://github.com/GoalPioneers/Formatter.XML.git
+[submodule "modules/Algorithms.Java"]
+	path = modules/Algorithms.Java
+	url = https://github.com/GoalPioneers/Algorithms.Java.git
