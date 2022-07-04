@@ -1,0 +1,12 @@
+[submodule "modules/Formatter.TSV"]
+	path = modules/Formatter.TSV
+	url = https://github.com/GoalPioneers/Formatter.TSV.git
+[submodule "modules/Formatter.TXT"]
+	path = modules/Formatter.TXT
+	url = https://github.com/GoalPioneers/Formatter.TXT.git
+[submodule "modules/Formatter.JSON"]
+	path = modules/Formatter.JSON
+	url = https://github.com/GoalPioneers/Formatter.JSON.git
+[submodule "modules/Formatter.XML"]
+	path = modules/Formatter.XML
+	url = https://github.com/GoalPioneers/Formatter.XML.git
