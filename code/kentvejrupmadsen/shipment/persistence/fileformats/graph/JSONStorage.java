@@ -1,15 +1,15 @@
-    package kentvejrupmadsen.shipment.persistence.fileformats.graph;
+package kentvejrupmadsen.shipment.persistence.fileformats.graph;
 
-    //
-    import kentvejrupmadsen.shipment.persistence.fileformats.PersistenceStorage;
+//
+import kentvejrupmadsen.shipment.persistence.fileformats.PersistenceStorage;
 
+
+/**
+ * @author Kent Madsen
+ */
+public class JSONStorage
+        extends PersistenceStorage
+        implements GraphFormat
+{
     
-    /**
-     * @author Kent Madsen
-     */
-    public class JSONStorage
-        extends PersistenceStorage 
-            implements GraphFormat
-    {
-
-    }
+}

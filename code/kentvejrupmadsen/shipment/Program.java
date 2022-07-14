@@ -1,7 +1,9 @@
 package kentvejrupmadsen.shipment;
 
+
 import kentvejrupmadsen.shipment.persistence.configuration.ConfigurationStore;
-import kentvejrupmadsen.shipment.persistence.configuration.StoreFacade;
+import kentvejrupmadsen.shipment.persistence.configuration.template.StoreFacade;
+
 
 import kentvejrupmadsen.shipment.application.interactive.Interaction;
 import kentvejrupmadsen.shipment.application.interactive.InteractiveConsole;
@@ -28,7 +30,7 @@ public class Program
     
     // Code / Constructors
     /**
-     *
+     * @author Kent Madsen
      */
     public Program()
     {
@@ -37,7 +39,7 @@ public class Program
     
     
     /**
-     *
+     * @author Kent Madsen
      * @param arguments
      */
     public Program( String[] arguments )
@@ -48,7 +50,7 @@ public class Program
     
     
     /**
-     *
+     * @author Kent Madsen
      */
     private void defaultConstruction()
     {
@@ -64,7 +66,7 @@ public class Program
     
     // Code
     /**
-     *
+     * @author Kent Madsen
      */
     public void initialise()
     {
@@ -78,7 +80,7 @@ public class Program
     
     
     /**
-     *
+     * @author Kent Madsen
      */
     protected void initialiseConfiguration()
     {
@@ -95,7 +97,7 @@ public class Program
     
     
     /**
-     *
+     * @author Kent Madsen
      */
     protected void initialiseParameters()
     {
@@ -111,18 +113,18 @@ public class Program
     }
     
     /**
-     *
+     * @author Kent Madsen
      */
     public void execution()
     {
         while( this.getActor().isToContinue() )
         {
-            this.getActor().userInput();
+            this.getActor().askForUserInput();
         }
     }
     
     /**
-     *
+     * @author Kent Madsen
      */
     public void gc()
     {
@@ -131,18 +133,24 @@ public class Program
     
     
     // Accessors
+    /**
+     * @author Kent Madsen
+     */
     public Interaction getActor()
     {
         return this.actor;
     }
     
+    /**
+     * @author Kent Madsen
+     */
     protected void setActor( InteractiveConsole actor )
     {
         this.actor = actor;
     }
     
     /**
-     *
+     * @author Kent Madsen
      * @return
      */
     public String[] getArguments()
@@ -151,7 +159,7 @@ public class Program
     }
     
     /**
-     *
+     * @author Kent MAdsen
      * @param arguments
      */
     protected void setArguments( String[] arguments )
@@ -160,7 +168,7 @@ public class Program
     }
     
     /**
-     *
+     * @author Kent Madsen
      * @return
      */
     public ParameterFacade getParameterInterpreter()
@@ -169,7 +177,7 @@ public class Program
     }
     
     /**
-     *
+     * @author Kent Madsen
      * @return
      */
     public StoreFacade getConfigurationStore()
@@ -178,7 +186,7 @@ public class Program
     }
     
     /**
-     *
+     * @author Kent Madsen
      * @param configurationStore
      */
     protected void setConfigurationStore( StoreFacade configurationStore )
@@ -188,7 +196,7 @@ public class Program
     
     
     /**
-     *
+     * @author Kent Madsen
      * @param parameterInterpreter
      */
     protected void setParameterInterpreter( ParameterFacade parameterInterpreter )
@@ -196,11 +204,17 @@ public class Program
         this.parameterInterpreter = parameterInterpreter;
     }
     
+    /**
+     * @author Kent Madsen
+     */
     public StateController getController()
     {
         return controller;
     }
     
+    /**
+     * @author Kent Madsen
+     */
     public void setController( StateController controller )
     {
         this.controller = controller;

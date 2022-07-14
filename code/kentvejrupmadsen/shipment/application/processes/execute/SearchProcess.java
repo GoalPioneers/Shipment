@@ -1,20 +1,21 @@
-	package kentvejrupmadsen.shipment.application.processes.execute;
+package kentvejrupmadsen.shipment.application.processes.execute;
 
-	import kentvejrupmadsen.shipment.application.commands.ExecuteCommand;
-	
-	
+import kentvejrupmadsen.shipment.application.commands.ExecuteCommand;
+import kentvejrupmadsen.shipment.application.interactive.Interaction;
+
+
+/**
+ * @author Kent Madsen
+ */
+public class SearchProcess
+		extends ExecuteCommand
+{
 	/**
 	 * @author Kent Madsen
 	 */
-	public class SearchProcess 
-		extends ExecuteCommand
+	public SearchProcess( Interaction actor )
 	{
-		/**
-		 * 
-		 */
-		public SearchProcess()
-		{
-			super("search" );
-		}
-		
+		super("search", actor );
 	}
+	
+}

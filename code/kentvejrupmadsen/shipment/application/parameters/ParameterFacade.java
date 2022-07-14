@@ -7,6 +7,13 @@
      */
     public interface ParameterFacade
     {
+        /**
+         * @author Kent Madsen
+         */
         void setStateController( StateController controller );
+        
+        /**
+         * @author Kent Madsen
+         */
         boolean configure();
     }
