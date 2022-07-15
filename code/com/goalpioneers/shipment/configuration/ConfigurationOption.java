@@ -15,20 +15,52 @@ public class ConfigurationOption
 	 */
 	public ConfigurationOption()
 	{
-		this.setData( 
+		this.setParameters( 
 			new ArrayList<>() 
 		);
 	}
 	
-	private List<ConfigurationParameter> data = null;
 	
-	public List<ConfigurationParameter> getData() 
+	// Variables
+	private ConfigurationLabel name = null;
+	
+	private List<ConfigurationParameter> parameters = null;
+	
+	
+	// Accessors
+	/**
+	 * 
+	 * @return
+	 */
+	public ConfigurationLabel getName() 
 	{
-		return data;
+		return name;
 	}
 	
-	public void setData( List<ConfigurationParameter> data ) 
+	/**
+	 * 
+	 * @return
+	 */
+	public List<ConfigurationParameter> getParameters() 
 	{
-		this.data = data;
+		return parameters;
+	}
+	
+	/**
+	 * 
+	 * @param name
+	 */
+	public void setName( ConfigurationLabel name ) 
+	{
+		this.name = name;
+	}
+	
+	/**
+	 * 
+	 * @param parameters
+	 */
+	public void setParameters( List<ConfigurationParameter> parameters ) 
+	{
+		this.parameters = parameters;
 	}
 }
