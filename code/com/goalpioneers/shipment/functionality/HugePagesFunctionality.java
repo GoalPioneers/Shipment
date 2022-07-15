@@ -15,4 +15,10 @@ public class HugePagesFunctionality
 	{
 		
 	}
+	
+	@Override
+	public void execute()
+	{
+		
+	}
 }

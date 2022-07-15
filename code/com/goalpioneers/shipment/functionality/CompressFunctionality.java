@@ -15,4 +15,14 @@ public class CompressFunctionality
 	{
 		
 	}
+	
+	
+	/**
+	 * 
+	 */
+	@Override
+	public void execute() 
+	{
+		
+	}
 }
