@@ -11,4 +11,10 @@ public abstract class SystemFunction
 	 * 
 	 */
 	public abstract void execute();
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public abstract boolean isValid();
 }

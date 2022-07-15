@@ -16,4 +16,14 @@ public class UpdateFunction
 	{
 		
 	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
+	}
 }

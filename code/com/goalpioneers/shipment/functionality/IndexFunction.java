@@ -25,4 +25,14 @@ public class IndexFunction
 	{
 		
 	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
+	}
 }
