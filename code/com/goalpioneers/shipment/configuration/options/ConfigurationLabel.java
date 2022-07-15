@@ -16,6 +16,7 @@ public class ConfigurationLabel
 		
 	}
 	
+	
 	// Variables
 	private String name = null;
 	
@@ -27,7 +28,7 @@ public class ConfigurationLabel
 	 */
 	public String getName() 
 	{
-		return name;
+		return this.name;
 	}
 	
 	
@@ -38,5 +39,25 @@ public class ConfigurationLabel
 	public void setName( String name ) 
 	{
 		this.name = name;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public boolean isEmpty()
+	{
+		return ( this.name == null );
+	}
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public String toString() 
+	{
+		return this.name;
 	}
 }

@@ -16,6 +16,10 @@ public class ConfigurationOption
 	 */
 	public ConfigurationOption()
 	{
+		this.setName(
+			new ConfigurationLabel() 
+		);
+		
 		this.setParameters( 
 			new ArrayList<>() 
 		);
@@ -35,7 +39,7 @@ public class ConfigurationOption
 	 */
 	public ConfigurationLabel getName() 
 	{
-		return name;
+		return this.name;
 	}
 	
 	/**
@@ -44,7 +48,7 @@ public class ConfigurationOption
 	 */
 	public List<ConfigurationParameter> getParameters() 
 	{
-		return parameters;
+		return this.parameters;
 	}
 	
 	/**
@@ -63,5 +67,16 @@ public class ConfigurationOption
 	public void setParameters( List<ConfigurationParameter> parameters ) 
 	{
 		this.parameters = parameters;
+	}
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public String toString() 
+	{
+		return super.toString();
 	}
 }
