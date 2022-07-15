@@ -15,11 +15,14 @@ public class CommandParser
 	 */
 	public CommandParser( DomainFacade domain )
 	{
+		this.setInterpreter( new CommandInterpreter() );
 		this.setState( domain );
 	}
 	
 	//
 	private DomainFacade state = null;
+	
+	private CommandInterpreter interpreter = null;
 	
 	//
 	/**
@@ -33,10 +36,28 @@ public class CommandParser
 	
 	/**
 	 * 
+	 * @return
+	 */
+	public CommandInterpreter getInterpreter() 
+	{
+		return interpreter;
+	}
+	
+	/**
+	 * 
 	 * @param state
 	 */
 	public void setState( DomainFacade state ) 
 	{
 		this.state = state;
+	}
+	
+	/**
+	 * 
+	 * @param interpreter
+	 */
+	public void setInterpreter( CommandInterpreter interpreter ) 
+	{
+		this.interpreter = interpreter;
 	}
 }
