@@ -1,4 +1,4 @@
-package com.goalpioneers.shipment.configuration;
+package com.goalpioneers.shipment.configuration.options;
 
 
 /**

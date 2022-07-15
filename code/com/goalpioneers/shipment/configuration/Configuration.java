@@ -1,8 +1,10 @@
 package com.goalpioneers.shipment.configuration;
 
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.goalpioneers.shipment.configuration.options.ConfigurationOption;
+
 
 /**
  * 
@@ -18,6 +20,7 @@ public class Configuration
 				new ArrayList<>() 
 		);
 	}
+	
 	
 	// Variables
 	private List<ConfigurationOption> options = null;
