@@ -5,7 +5,8 @@ import com.goalpioneers.shipment.io.arguments.Argument;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
 public class CommandInterpreter 
 {

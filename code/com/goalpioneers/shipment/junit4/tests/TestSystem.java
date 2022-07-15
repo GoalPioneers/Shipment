@@ -5,9 +5,10 @@ import static org.junit.Assert.assertEquals;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
-public class TestsSystem 
+public class TestSystem 
 {
 	/**
 	 * 

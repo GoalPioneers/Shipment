@@ -4,7 +4,8 @@ import com.goalpioneers.shipment.domain.DomainFacade;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
 public class ArgumentParser 
 	implements ArgumentParserFacade
