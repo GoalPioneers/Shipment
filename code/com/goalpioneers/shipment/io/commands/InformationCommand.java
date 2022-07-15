@@ -1,4 +1,4 @@
-package com.goalpioneers.shipment.input.commands;
+package com.goalpioneers.shipment.io.commands;
 
 
 public abstract class InformationCommand 
