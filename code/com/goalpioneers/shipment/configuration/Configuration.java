@@ -7,7 +7,8 @@ import com.goalpioneers.shipment.configuration.options.ConfigurationOption;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
 public class Configuration 
 {

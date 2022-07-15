@@ -6,7 +6,8 @@ import java.util.List;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
 public class ConfigurationOption 
 {
