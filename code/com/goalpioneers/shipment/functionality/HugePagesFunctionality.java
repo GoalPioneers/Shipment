@@ -5,13 +5,13 @@ package com.goalpioneers.shipment.functionality;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class CompressFunctionality
+public class HugePagesFunctionality 
 	extends SystemFunctionality
 {
 	/**
 	 * 
 	 */
-	public CompressFunctionality()
+	public HugePagesFunctionality()
 	{
 		
 	}
