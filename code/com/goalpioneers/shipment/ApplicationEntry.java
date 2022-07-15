@@ -4,7 +4,8 @@ import com.goalpioneers.shipment.domain.Application;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
 public class ApplicationEntry
 {

@@ -9,7 +9,8 @@ import com.goalpioneers.shipment.io.commands.CommandParserFacade;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
 public class Application 
 {
