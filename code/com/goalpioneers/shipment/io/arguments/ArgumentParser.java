@@ -3,13 +3,21 @@ package com.goalpioneers.shipment.io.arguments;
 import com.goalpioneers.shipment.domain.DomainFacade;
 
 
+/**
+ * 
+ */
 public class ArgumentParser 
 	implements ArgumentParserFacade
 {
+	/**
+	 * 
+	 * @param state
+	 */
 	public ArgumentParser( DomainFacade state )
 	{
 		this.setState( state );
 	}
+	
 	
 	private DomainFacade state = null;
 	
