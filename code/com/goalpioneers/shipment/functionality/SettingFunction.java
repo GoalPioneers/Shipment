@@ -2,15 +2,16 @@ package com.goalpioneers.shipment.functionality;
 
 
 /**
- * 
+ * @author Kent v. Madsen
+ * @author Goal Pioneers
  */
-public class SettingsFunctionality 
-		extends SystemFunctionality
+public class SettingFunction 
+		extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public SettingsFunctionality()
+	public SettingFunction()
 	{
 		
 	}

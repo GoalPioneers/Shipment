@@ -5,10 +5,14 @@ package com.goalpioneers.shipment.functionality;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public abstract class SystemFunctionality 
+public class InstallFunction 
+		extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public abstract void execute();
+	@Override
+	public void execute() {
+		
+	}
 }

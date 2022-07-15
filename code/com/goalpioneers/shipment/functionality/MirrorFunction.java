@@ -5,17 +5,16 @@ package com.goalpioneers.shipment.functionality;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class CompressFunctionality
-	extends SystemFunctionality
+public class MirrorFunction 
+		extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public CompressFunctionality()
+	public MirrorFunction()
 	{
 		
 	}
-	
 	
 	/**
 	 * 

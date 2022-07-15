@@ -5,13 +5,13 @@ package com.goalpioneers.shipment.functionality;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class FormatFunctionality 
-		extends SystemFunctionality
+public class CompressFunction
+	extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public FormatFunctionality()
+	public CompressFunction()
 	{
 		
 	}
@@ -21,7 +21,7 @@ public class FormatFunctionality
 	 * 
 	 */
 	@Override
-	public void execute()
+	public void execute() 
 	{
 		
 	}
