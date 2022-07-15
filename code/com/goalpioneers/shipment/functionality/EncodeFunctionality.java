@@ -16,6 +16,10 @@ public class EncodeFunctionality
 		
 	}
 	
+	
+	/**
+	 * 
+	 */
 	@Override
 	public void execute()
 	{
