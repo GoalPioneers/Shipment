@@ -1,5 +1,6 @@
 package com.goalpioneers.shipment.domain;
 
+
 /**
  * 
  */
