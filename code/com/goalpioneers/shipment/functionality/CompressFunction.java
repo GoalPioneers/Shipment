@@ -25,4 +25,14 @@ public class CompressFunction
 	{
 		
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public boolean isValid() 
+	{
+		return false;
+	}
 }

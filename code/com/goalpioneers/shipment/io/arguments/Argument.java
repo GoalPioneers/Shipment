@@ -1,6 +1,10 @@
 package com.goalpioneers.shipment.io.arguments;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
@@ -12,14 +16,30 @@ public class Argument
 	 */
 	public Argument()
 	{
+		this(null, 
+			  new ArrayList<>() );
+	}
+	
+	public Argument( String command, List<ArgumentOption> options )
+	{
+		this.setCommand( command );
 		
+		this.setOptions(
+			options
+		);
 	}
 	
 	
-	//
-	private String line = null;
+	// Variables
+	/**
+	 * The command to be executed
+	 */
+	private String command = null;
 	
-	private String option = null;
+	/**
+	 * the 
+	 */
+	private List<ArgumentOption> options = null;
 	
 	
 	// Accessors
@@ -27,35 +47,35 @@ public class Argument
 	 * 
 	 * @return
 	 */
-	public String getLine() 
+	public String getCommand() 
 	{
-		return line;
+		return this.command;
 	}
 	
 	/**
 	 * 
 	 * @return
 	 */
-	public String getOption() 
+	public List<ArgumentOption> getOptions() 
 	{
-		return option;
+		return this.options;
 	}
 	
 	/**
 	 * 
-	 * @param line
+	 * @param command
 	 */
-	public void setLine( String line ) 
+	protected void setCommand( String command ) 
 	{
-		this.line = line;
+		this.command = command;
 	}
 	
 	/**
 	 * 
-	 * @param option
+	 * @param options
 	 */
-	public void setOption( String option ) 
+	protected void setOptions( List<ArgumentOption> options ) 
 	{
-		this.option = option;
+		this.options = options;
 	}
 }

@@ -25,4 +25,14 @@ public class SearchFunction
 	{
 		
 	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
+	}
 }

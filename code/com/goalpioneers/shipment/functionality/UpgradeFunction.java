@@ -16,4 +16,14 @@ public class UpgradeFunction
 	{
 		
 	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
+	}
 }
