@@ -20,12 +20,16 @@ public class ArgumentParserActor
 		);
 	}
 	
-	
 	// Variables
 	private ArgumentParser parser = null; 
 	
 	
 	// Code
+	public void insertArguments( String[] arguments )
+	{
+		this.getParser().insertArguments( arguments );
+	}
+	
 	/**
 	 * 
 	 */

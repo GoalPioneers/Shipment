@@ -28,7 +28,7 @@ public class Application
 			) 
 		);
 		
-		this.setInitialiseWithArguments(
+		this.setArgumentsActor(
 			new ArgumentParserActor( 
 				this.getDomainState() 
 			)
@@ -50,7 +50,7 @@ public class Application
 	/**
 	 * 
 	 */
-	private ArgumentParserActor initialiseWithArguments = null;
+	private ArgumentParserActor argumentsActor = null;
 	
 	
 	
@@ -58,7 +58,7 @@ public class Application
 	// Code
 	public void insertionOfArguments( String[] arguments )
 	{
-		this.getInitialiseWithArguments().getParser().insertArguments( arguments );
+		this.getArgumentsActor().insertArguments( arguments );
 	}
 	
 	
@@ -111,18 +111,18 @@ public class Application
 	 * 
 	 * @return
 	 */
-	public ArgumentParserActor getInitialiseWithArguments() 
+	public ArgumentParserActor getArgumentsActor() 
 	{
-		return initialiseWithArguments;
+		return argumentsActor;
 	}
 	
 	/**
 	 * 
-	 * @param initialiseWithArguments
+	 * @param argumentsActor
 	 */
-	public void setInitialiseWithArguments( ArgumentParserActor initialiseWithArguments ) 
+	public void setArgumentsActor(ArgumentParserActor argumentsActor) 
 	{
-		this.initialiseWithArguments = initialiseWithArguments;
+		this.argumentsActor = argumentsActor;
 	}
 	
 	/**
