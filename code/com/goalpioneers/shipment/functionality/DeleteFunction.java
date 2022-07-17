@@ -5,13 +5,13 @@ package com.goalpioneers.shipment.functionality;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class EncodeFunction 
-	extends SystemFunction
+public class DeleteFunction 
+		extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public EncodeFunction()
+	public DeleteFunction()
 	{
 		
 	}
@@ -21,7 +21,7 @@ public class EncodeFunction
 	 * 
 	 */
 	@Override
-	public void execute()
+	public void execute() 
 	{
 		
 	}

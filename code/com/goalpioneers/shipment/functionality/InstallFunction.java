@@ -12,7 +12,18 @@ public class InstallFunction
 	 * 
 	 */
 	@Override
-	public void execute() {
+	public void execute() 
+	{
 		
+	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
 	}
 }

@@ -10,11 +10,19 @@ import com.goalpioneers.shipment.io.arguments.Argument;
  */
 public class CommandInterpreter 
 {
+	/**
+	 * 
+	 */
 	public CommandInterpreter()
 	{
 		
 	}
 	
+	/**
+	 * 
+	 * @param domainState
+	 * @param args
+	 */
 	public void Interprete( DomainFacade domainState, Argument[] args )
 	{
 		

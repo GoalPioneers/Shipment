@@ -25,4 +25,14 @@ public class FormatFunction
 	{
 		
 	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
+	}
 }

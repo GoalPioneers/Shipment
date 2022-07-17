@@ -9,12 +9,21 @@ import com.goalpioneers.shipment.domain.DomainFacade;
  */
 public class ArgumentInterpreter 
 {
+	/**
+	 * 
+	 */
 	public ArgumentInterpreter()
 	{
 		
 	}
 	
-	public void Interprete( DomainFacade domainState, Argument[] args )
+	
+	/**
+	 * 
+	 * @param domainState
+	 * @param arguments
+	 */
+	public void Interprete( DomainFacade domainState, Argument[] arguments )
 	{
 		
 	}

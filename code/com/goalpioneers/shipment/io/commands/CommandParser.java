@@ -21,9 +21,16 @@ public class CommandParser
 	}
 	
 	//
+	/**
+	 * 
+	 */
 	private DomainFacade state = null;
 	
+	/**
+	 * 
+	 */
 	private CommandInterpreter interpreter = null;
+	
 	
 	//
 	/**
