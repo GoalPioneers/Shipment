@@ -16,9 +16,13 @@ public class CommandParser
 	 */
 	public CommandParser( DomainFacade domain )
 	{
-		this.setInterpreter( new CommandInterpreter() );
+		this.setInterpreter( 
+			new CommandInterpreter() 
+		);
+		
 		this.setState( domain );
 	}
+	
 	
 	//
 	/**
@@ -39,7 +43,7 @@ public class CommandParser
 	 */
 	public DomainFacade getState() 
 	{
-		return state;
+		return this.state;
 	}
 	
 	/**
@@ -48,7 +52,7 @@ public class CommandParser
 	 */
 	public CommandInterpreter getInterpreter() 
 	{
-		return interpreter;
+		return this.interpreter;
 	}
 	
 	/**

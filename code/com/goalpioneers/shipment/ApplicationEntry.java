@@ -11,14 +11,21 @@ import com.goalpioneers.shipment.io.arguments.ArgumentParserFacade;
 public class ApplicationEntry
 {
 	//
+	public ApplicationEntry()
+	{
+		this( null );
+	}
+	
 	/**
 	 * 
 	 */
-	public ApplicationEntry()
+	public ApplicationEntry( String[] arguments )
 	{
 		this.setApplication( 
 			new Application() 
 		);
+		
+		this.getApplication().insertionOfArguments( arguments );
 	}
 	
 	//
@@ -26,14 +33,8 @@ public class ApplicationEntry
 	
 	
 	// code
-	public void passArguments( String[] arguments )
-	{
-		ArgumentParserFacade facade = this.getApplication().getArgumentFacade();
-		
-	}
-	
 	/**
-	 * 
+	 * The applications 3 phases. with specific purposes in mind.
 	 */
 	public void run()
 	{
@@ -68,9 +69,9 @@ public class ApplicationEntry
 	 * 
 	 * @param args
 	 */
-	public static void main( String[] args )
+	public static void main( String[] arguments )
 	{
-		ApplicationEntry entry = new ApplicationEntry();
+		ApplicationEntry entry = new ApplicationEntry( arguments );
 		entry.run();
 	}
 }
