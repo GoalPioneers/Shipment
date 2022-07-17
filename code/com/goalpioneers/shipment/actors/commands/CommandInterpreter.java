@@ -1,7 +1,7 @@
-package com.goalpioneers.shipment.io.commands;
+package com.goalpioneers.shipment.actors.commands;
 
 import com.goalpioneers.shipment.domain.DomainFacade;
-import com.goalpioneers.shipment.io.arguments.Argument;
+import com.goalpioneers.shipment.actors.arguments.Argument;
 
 
 /**

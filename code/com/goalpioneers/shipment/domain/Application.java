@@ -3,8 +3,8 @@ package com.goalpioneers.shipment.domain;
 
 import java.util.List;
 
-import com.goalpioneers.shipment.io.arguments.ArgumentParserActor;
-import com.goalpioneers.shipment.io.commands.CommandConsoleActor;
+import com.goalpioneers.shipment.actors.arguments.ArgumentParserActor;
+import com.goalpioneers.shipment.actors.commands.CommandConsoleActor;
 
 
 /**
@@ -53,9 +53,11 @@ public class Application
 	private ArgumentParserActor argumentsActor = null;
 	
 	
-	
-	
 	// Code
+	/**
+	 * 
+	 * @param arguments
+	 */
 	public void insertionOfArguments( String[] arguments )
 	{
 		this.getArgumentsActor().insertArguments( arguments );

@@ -1,7 +1,6 @@
 package com.goalpioneers.shipment;
 
 import com.goalpioneers.shipment.domain.Application;
-import com.goalpioneers.shipment.io.arguments.ArgumentParserFacade;
 
 
 /**

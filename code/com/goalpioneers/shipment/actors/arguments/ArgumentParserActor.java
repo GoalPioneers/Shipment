@@ -1,4 +1,4 @@
-package com.goalpioneers.shipment.io.arguments;
+package com.goalpioneers.shipment.actors.arguments;
 
 import com.goalpioneers.shipment.domain.ActorFacade;
 import com.goalpioneers.shipment.domain.DomainFacade;
