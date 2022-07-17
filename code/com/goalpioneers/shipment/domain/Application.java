@@ -19,7 +19,7 @@ public class Application
 	public Application()
 	{
 		this.setDomainState(
-				new DomainState() 
+				new DomainState( true )
 		);
 		
 		this.getActors().add( 

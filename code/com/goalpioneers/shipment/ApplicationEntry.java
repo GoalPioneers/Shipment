@@ -50,7 +50,7 @@ public class ApplicationEntry
 	 */
 	public Application getApplication() 
 	{
-		return application;
+		return this.application;
 	}
 	
 	
@@ -66,7 +66,7 @@ public class ApplicationEntry
 	
 	/**
 	 * 
-	 * @param args
+	 * @param arguments
 	 */
 	public static void main( String[] arguments )
 	{
