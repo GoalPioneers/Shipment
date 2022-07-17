@@ -1,6 +1,7 @@
 package com.goalpioneers.shipment;
 
 import com.goalpioneers.shipment.domain.Application;
+import com.goalpioneers.shipment.io.arguments.ArgumentParserFacade;
 
 
 /**
@@ -16,7 +17,7 @@ public class ApplicationEntry
 	public ApplicationEntry()
 	{
 		this.setApplication( 
-				new Application() 
+			new Application() 
 		);
 	}
 	
@@ -27,6 +28,7 @@ public class ApplicationEntry
 	// code
 	public void passArguments( String[] arguments )
 	{
+		ArgumentParserFacade facade = this.getApplication().getArgumentFacade();
 		
 	}
 	
@@ -40,6 +42,7 @@ public class ApplicationEntry
 		this.getApplication().gc();
 	}
 	
+	
 	//
 	/**
 	 * 
@@ -49,6 +52,7 @@ public class ApplicationEntry
 	{
 		return application;
 	}
+	
 	
 	/**
 	 * 

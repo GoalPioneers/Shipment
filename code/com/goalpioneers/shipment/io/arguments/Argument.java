@@ -15,11 +15,17 @@ public class Argument
 		
 	}
 	
+	public Argument( String command, String options )
+	{
+		this.setCommand( command );
+		this.setOptions( options );
+	}
+	
 	
 	//
-	private String line = null;
+	private String command = null;
 	
-	private String option = null;
+	private String options = null;
 	
 	
 	// Accessors
@@ -27,35 +33,35 @@ public class Argument
 	 * 
 	 * @return
 	 */
-	public String getLine() 
+	public String getCommand() 
 	{
-		return line;
+		return command;
 	}
 	
 	/**
 	 * 
 	 * @return
 	 */
-	public String getOption() 
+	public String getOptions() 
 	{
-		return option;
+		return options;
 	}
 	
 	/**
 	 * 
-	 * @param line
+	 * @param command
 	 */
-	public void setLine( String line ) 
+	protected void setCommand(String command) 
 	{
-		this.line = line;
+		this.command = command;
 	}
 	
 	/**
 	 * 
 	 * @param option
 	 */
-	public void setOption( String option ) 
+	protected void setOptions( String option ) 
 	{
-		this.option = option;
+		this.options = option;
 	}
 }

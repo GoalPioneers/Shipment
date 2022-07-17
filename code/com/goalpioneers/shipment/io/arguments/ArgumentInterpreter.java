@@ -14,7 +14,7 @@ public class ArgumentInterpreter
 		
 	}
 	
-	public void Interprete( DomainFacade domainState, Argument[] args )
+	public void Interprete( DomainFacade domainState, Argument[] arguments )
 	{
 		
 	}
