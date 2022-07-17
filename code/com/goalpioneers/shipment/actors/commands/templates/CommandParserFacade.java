@@ -1,4 +1,4 @@
-package com.goalpioneers.shipment.actors.commands;
+package com.goalpioneers.shipment.actors.commands.templates;
 
 
 /**

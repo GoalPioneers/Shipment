@@ -3,7 +3,8 @@ package com.goalpioneers.shipment.actors.arguments;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.goalpioneers.shipment.domain.DomainFacade;
+import com.goalpioneers.shipment.actors.arguments.templates.ArgumentParserFacade;
+import com.goalpioneers.shipment.domain.templates.DomainFacade;
 
 
 /**

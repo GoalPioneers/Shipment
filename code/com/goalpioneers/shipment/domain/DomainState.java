@@ -1,6 +1,8 @@
 package com.goalpioneers.shipment.domain;
 
 
+import com.goalpioneers.shipment.domain.templates.DomainFacade;
+
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers

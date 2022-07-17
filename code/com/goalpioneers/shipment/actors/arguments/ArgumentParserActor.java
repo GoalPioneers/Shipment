@@ -1,7 +1,7 @@
 package com.goalpioneers.shipment.actors.arguments;
 
-import com.goalpioneers.shipment.domain.ActorFacade;
-import com.goalpioneers.shipment.domain.DomainFacade;
+import com.goalpioneers.shipment.domain.templates.ActorFacade;
+import com.goalpioneers.shipment.domain.templates.DomainFacade;
 
 /**
  * 

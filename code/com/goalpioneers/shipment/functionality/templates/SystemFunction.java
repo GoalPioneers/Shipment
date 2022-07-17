@@ -1,4 +1,4 @@
-package com.goalpioneers.shipment.functionality;
+package com.goalpioneers.shipment.functionality.templates;
 
 
 /**

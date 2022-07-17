@@ -1,6 +1,7 @@
 package com.goalpioneers.shipment.actors.commands;
 
-import com.goalpioneers.shipment.domain.DomainFacade;
+import com.goalpioneers.shipment.actors.commands.templates.CommandParserFacade;
+import com.goalpioneers.shipment.domain.templates.DomainFacade;
 
 
 /**
