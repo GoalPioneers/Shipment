@@ -26,7 +26,13 @@ public class Application
 				new DomainState( true )
 		);
 		
-		this.setActors( new ArrayList<>() );
+		this.setActors( 
+			new ArrayList<>() 
+		);
+		
+		this.setToBeRemoved(
+				new ArrayList<>()
+		);
 		
 		this.getActors().add( 
 			new CommandConsoleActor( 
@@ -34,38 +40,10 @@ public class Application
 			) 
 		);
 		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
 		this.setArgumentsActor(
 			new ArgumentParserActor( 
 				this.getDomainState() 
 			)
-		);
-		
-		this.setToBeRemoved(
-			new ArrayList<>() 
 		);
 	}
 	
