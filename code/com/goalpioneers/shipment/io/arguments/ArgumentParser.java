@@ -32,10 +32,19 @@ public class ArgumentParser
 	
 	
 	// Variables
+	/**
+	 * 
+	 */
 	private DomainFacade state = null;
 	
+	/**
+	 * 
+	 */
 	private ArgumentInterpreter interpreter = null;
 	
+	/**
+	 * 
+	 */
 	private List<Argument> arguments = null;
 	
 	

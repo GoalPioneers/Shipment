@@ -6,7 +6,7 @@ package com.goalpioneers.shipment.io.commands;
  * @author Goal Pioneers
  */
 public abstract class InformationCommand 
-		extends SystemCommand
+	extends SystemCommand
 {
 	
 }
