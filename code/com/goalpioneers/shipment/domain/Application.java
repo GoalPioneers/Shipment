@@ -4,6 +4,7 @@ package com.goalpioneers.shipment.domain;
 import com.goalpioneers.shipment.io.arguments.ArgumentParser;
 import com.goalpioneers.shipment.io.arguments.ArgumentParserFacade;
 
+import com.goalpioneers.shipment.io.commands.CommandConsole;
 import com.goalpioneers.shipment.io.commands.CommandParser;
 import com.goalpioneers.shipment.io.commands.CommandParserFacade;
 
@@ -22,24 +23,24 @@ public class Application
 		this.setDomainState(
 				new DomainState() 
 		);
-		
-		this.setCommandFacade( 
-				new CommandParser( 
-						this.getDomainState() 
-				)
-		);
-		
-		this.setArgumentFacade(
-				new ArgumentParser( 
-						this.getDomainState() 
-				)
-		);
 	}
 	
 	
-	//
+	// Variables
 	/**
 	 * 
+	 */
+	private DomainFacade domainState;
+	
+	/**
+	 * 
+	 */
+	private CommandConsole console;
+	
+	
+	// Code
+	/**
+	 *
 	 */
 	public void initialise()
 	{
@@ -47,7 +48,7 @@ public class Application
 	}
 	
 	/**
-	 * 
+	 *
 	 */
 	public void execute()
 	{
@@ -55,7 +56,7 @@ public class Application
 	}
 	
 	/**
-	 * 
+	 *
 	 */
 	public void gc()
 	{
@@ -63,42 +64,41 @@ public class Application
 	}
 	
 	
-	// Variables
-	private DomainFacade domainState;
-	
-	private ArgumentParserFacade argumentFacade = null;
-	
-	private CommandParserFacade commandFacade = null;
-	
-	
 	// Accessors
+	/**
+	 * 
+	 * @return
+	 */
 	public DomainFacade getDomainState() 
 	{
 		return domainState;
 	}
 	
-	public ArgumentParserFacade getArgumentFacade() 
-	{
-		return argumentFacade;
-	}
-	
-	public CommandParserFacade getCommandFacade() 
-	{
-		return commandFacade;
-	}
-	
+	/**
+	 * 
+	 * @param domainState
+	 */
 	public void setDomainState( DomainFacade domainState ) 
 	{
 		this.domainState = domainState;
 	}
 	
-	public void setArgumentFacade( ArgumentParserFacade argumentFacade ) 
+	/**
+	 * 
+	 * @return
+	 */
+	public CommandConsole getConsole() 
 	{
-		this.argumentFacade = argumentFacade;
+		return console;
 	}
 	
-	public void setCommandFacade( CommandParserFacade commandFacade ) 
+	
+	/**
+	 * 
+	 * @param console
+	 */
+	public void setConsole( CommandConsole console ) 
 	{
-		this.commandFacade = commandFacade;
+		this.console = console;
 	}
 }
