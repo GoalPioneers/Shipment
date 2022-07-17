@@ -1,6 +1,6 @@
-package com.goalpioneers.shipment.io.arguments;
+package com.goalpioneers.shipment.actors.arguments;
 
-import com.goalpioneers.shipment.domain.DomainFacade;
+import com.goalpioneers.shipment.domain.templates.DomainFacade;
 
 
 /**
