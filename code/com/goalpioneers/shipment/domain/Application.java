@@ -1,12 +1,10 @@
 package com.goalpioneers.shipment.domain;
 
 
-import com.goalpioneers.shipment.io.arguments.ArgumentParser;
-import com.goalpioneers.shipment.io.arguments.ArgumentParserFacade;
+import java.util.List;
 
-import com.goalpioneers.shipment.io.commands.CommandConsole;
-import com.goalpioneers.shipment.io.commands.CommandParser;
-import com.goalpioneers.shipment.io.commands.CommandParserFacade;
+import com.goalpioneers.shipment.io.arguments.ArgumentParserActor;
+import com.goalpioneers.shipment.io.commands.CommandConsoleActor;
 
 
 /**
@@ -23,6 +21,18 @@ public class Application
 		this.setDomainState(
 				new DomainState() 
 		);
+		
+		this.getActors().add( 
+			new CommandConsoleActor( 
+				this.getDomainState() 
+			) 
+		);
+		
+		this.setInitialiseWithArguments(
+			new ArgumentParserActor( 
+				this.getDomainState() 
+			)
+		);
 	}
 	
 	
@@ -35,10 +45,23 @@ public class Application
 	/**
 	 * 
 	 */
-	private CommandConsole console;
+	private List<ActorFacade> actors = null;
+	
+	/**
+	 * 
+	 */
+	private ArgumentParserActor initialiseWithArguments = null;
+	
+	
 	
 	
 	// Code
+	public void insertionOfArguments( String[] arguments )
+	{
+		this.getInitialiseWithArguments().getParser().insertArguments( arguments );
+	}
+	
+	
 	/**
 	 *
 	 */
@@ -74,6 +97,7 @@ public class Application
 		return domainState;
 	}
 	
+	
 	/**
 	 * 
 	 * @param domainState
@@ -87,18 +111,35 @@ public class Application
 	 * 
 	 * @return
 	 */
-	public CommandConsole getConsole() 
+	public ArgumentParserActor getInitialiseWithArguments() 
 	{
-		return console;
+		return initialiseWithArguments;
 	}
-	
 	
 	/**
 	 * 
-	 * @param console
+	 * @param initialiseWithArguments
 	 */
-	public void setConsole( CommandConsole console ) 
+	public void setInitialiseWithArguments( ArgumentParserActor initialiseWithArguments ) 
 	{
-		this.console = console;
+		this.initialiseWithArguments = initialiseWithArguments;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public List<ActorFacade> getActors() 
+	{
+		return actors;
+	}
+	
+	/**
+	 * 
+	 * @param actors
+	 */
+	public void setActors( List<ActorFacade> actors ) 
+	{
+		this.actors = actors;
 	}
 }

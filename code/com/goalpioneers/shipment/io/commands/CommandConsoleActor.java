@@ -1,23 +1,46 @@
 package com.goalpioneers.shipment.io.commands;
 
 
-import com.goalpioneers.shipment.domain.DomainState;
+import com.goalpioneers.shipment.domain.ActorFacade;
+import com.goalpioneers.shipment.domain.DomainFacade;
 
 
 /**
  * 
  */
-public class CommandConsole 
+public class CommandConsoleActor
+	implements ActorFacade
 {
 	/**
 	 * 
 	 * @param state
 	 */
-	public CommandConsole( DomainState state )
+	public CommandConsoleActor( DomainFacade state )
 	{
 		this.setParser(
 			new CommandParser( state ) 
 		);
+	}
+	
+	
+	/**
+	 * 
+	 */
+	@Override
+	public void run() 
+	{
+		
+	}
+	
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isToRun()
+	{
+		return this.isToRun;
 	}
 	
 	
@@ -50,15 +73,6 @@ public class CommandConsole
 	public void setParser( CommandParserFacade parser ) 
 	{
 		this.parser = parser;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public boolean isToRun() 
-	{
-		return this.isToRun;
 	}
 	
 	/**
