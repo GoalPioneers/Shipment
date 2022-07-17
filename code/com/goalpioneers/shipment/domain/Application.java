@@ -1,11 +1,10 @@
 package com.goalpioneers.shipment.domain;
 
 
-import com.goalpioneers.shipment.io.arguments.ArgumentParser;
-import com.goalpioneers.shipment.io.arguments.ArgumentParserFacade;
+import java.util.List;
 
-import com.goalpioneers.shipment.io.commands.CommandParser;
-import com.goalpioneers.shipment.io.commands.CommandParserFacade;
+import com.goalpioneers.shipment.io.arguments.ArgumentParserActor;
+import com.goalpioneers.shipment.io.commands.CommandConsoleActor;
 
 
 /**
@@ -23,23 +22,48 @@ public class Application
 				new DomainState() 
 		);
 		
-		this.setCommandFacade( 
-				new CommandParser( 
-						this.getDomainState() 
-				)
+		this.getActors().add( 
+			new CommandConsoleActor( 
+				this.getDomainState() 
+			) 
 		);
 		
-		this.setArgumentFacade(
-				new ArgumentParser( 
-						this.getDomainState() 
-				)
+		this.setArgumentsActor(
+			new ArgumentParserActor( 
+				this.getDomainState() 
+			)
 		);
 	}
 	
 	
-	//
+	// Variables
 	/**
 	 * 
+	 */
+	private DomainFacade domainState;
+	
+	/**
+	 * 
+	 */
+	private List<ActorFacade> actors = null;
+	
+	/**
+	 * 
+	 */
+	private ArgumentParserActor argumentsActor = null;
+	
+	
+	
+	
+	// Code
+	public void insertionOfArguments( String[] arguments )
+	{
+		this.getArgumentsActor().insertArguments( arguments );
+	}
+	
+	
+	/**
+	 *
 	 */
 	public void initialise()
 	{
@@ -47,7 +71,7 @@ public class Application
 	}
 	
 	/**
-	 * 
+	 *
 	 */
 	public void execute()
 	{
@@ -55,7 +79,7 @@ public class Application
 	}
 	
 	/**
-	 * 
+	 *
 	 */
 	public void gc()
 	{
@@ -63,42 +87,59 @@ public class Application
 	}
 	
 	
-	// Variables
-	private DomainFacade domainState;
-	
-	private ArgumentParserFacade argumentFacade = null;
-	
-	private CommandParserFacade commandFacade = null;
-	
-	
 	// Accessors
+	/**
+	 * 
+	 * @return
+	 */
 	public DomainFacade getDomainState() 
 	{
 		return domainState;
 	}
 	
-	public ArgumentParserFacade getArgumentFacade() 
-	{
-		return argumentFacade;
-	}
 	
-	public CommandParserFacade getCommandFacade() 
-	{
-		return commandFacade;
-	}
-	
+	/**
+	 * 
+	 * @param domainState
+	 */
 	public void setDomainState( DomainFacade domainState ) 
 	{
 		this.domainState = domainState;
 	}
 	
-	public void setArgumentFacade( ArgumentParserFacade argumentFacade ) 
+	/**
+	 * 
+	 * @return
+	 */
+	public ArgumentParserActor getArgumentsActor() 
 	{
-		this.argumentFacade = argumentFacade;
+		return argumentsActor;
 	}
 	
-	public void setCommandFacade( CommandParserFacade commandFacade ) 
+	/**
+	 * 
+	 * @param argumentsActor
+	 */
+	public void setArgumentsActor(ArgumentParserActor argumentsActor) 
 	{
-		this.commandFacade = commandFacade;
+		this.argumentsActor = argumentsActor;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public List<ActorFacade> getActors() 
+	{
+		return actors;
+	}
+	
+	/**
+	 * 
+	 * @param actors
+	 */
+	public void setActors( List<ActorFacade> actors ) 
+	{
+		this.actors = actors;
 	}
 }
