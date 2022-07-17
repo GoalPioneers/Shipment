@@ -1,4 +1,4 @@
-package com.goalpioneers.shipment.domain;
+package com.goalpioneers.shipment.domain.templates;
 
 
 /**
