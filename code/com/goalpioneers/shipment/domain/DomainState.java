@@ -22,7 +22,8 @@ public class DomainState
 	 * 
 	 * @return
 	 */
-	public boolean isKeepLoop() 
+	@Override
+	public boolean isToKeepLoop() 
 	{
 		return this.keepLoop;
 	}

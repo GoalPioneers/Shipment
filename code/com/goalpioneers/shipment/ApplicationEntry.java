@@ -35,7 +35,7 @@ public class ApplicationEntry
 	/**
 	 * The applications 3 phases. with specific purposes in mind.
 	 */
-	public void run()
+	public final void run()
 	{
 		this.getApplication().initialise();
 		this.getApplication().execute();
@@ -48,7 +48,7 @@ public class ApplicationEntry
 	 * 
 	 * @return
 	 */
-	public Application getApplication() 
+	public final Application getApplication() 
 	{
 		return this.application;
 	}
@@ -58,7 +58,7 @@ public class ApplicationEntry
 	 * 
 	 * @param application
 	 */
-	public void setApplication( Application application ) 
+	protected final void setApplication( Application application ) 
 	{
 		this.application = application;
 	}

@@ -20,6 +20,13 @@ public class CommandConsoleActor
 		this.setParser(
 			new CommandParser( state ) 
 		);
+		
+		
+		this.setToRun( false );
+		
+		if(System.console() == null)
+		{
+		}
 	}
 	
 	

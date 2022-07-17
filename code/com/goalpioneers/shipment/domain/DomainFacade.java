@@ -12,4 +12,10 @@ public interface DomainFacade
 	 * @param value
 	 */
 	public void setKeepLoop( boolean value );
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public boolean isToKeepLoop();
 }
