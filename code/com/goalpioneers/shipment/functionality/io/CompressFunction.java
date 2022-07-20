@@ -46,4 +46,9 @@ public class CompressFunction
 	{
 		return false;
 	}
+	
+	public static void main(String[] args)
+	{
+		
+	}
 }

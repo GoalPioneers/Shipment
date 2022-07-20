@@ -46,4 +46,9 @@ public class FormatFunction
 	{
 		return false;
 	}
+	
+	public static void main(String[] args)
+	{
+		
+	}
 }

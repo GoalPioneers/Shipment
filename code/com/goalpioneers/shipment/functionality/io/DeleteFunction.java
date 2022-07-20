@@ -46,4 +46,9 @@ public class DeleteFunction
 	{
 		return false;
 	}
+	
+	public static void main(String[] args)
+	{
+		
+	}
 }

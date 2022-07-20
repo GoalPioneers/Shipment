@@ -46,4 +46,9 @@ public class HugePagesFunction
 	{
 		return false;
 	}
+	
+	public static void main(String[] args)
+	{
+		
+	}
 }

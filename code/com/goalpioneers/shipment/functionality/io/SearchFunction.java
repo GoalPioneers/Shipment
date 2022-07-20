@@ -46,4 +46,9 @@ public class SearchFunction
 	{
 		return false;
 	}
+	
+	public static void main(String[] args)
+	{
+		
+	}
 }
