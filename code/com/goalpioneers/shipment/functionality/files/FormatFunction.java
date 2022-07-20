@@ -47,7 +47,11 @@ public class FormatFunction
 		return false;
 	}
 	
-	public static void main(String[] args)
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main( String[] args )
 	{
 		
 	}
