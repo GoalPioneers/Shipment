@@ -16,7 +16,7 @@ import com.goalpioneers.shipment.functionality.templates.SystemFunction;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class UpgradeFunction 
+public class UpdatePackagesFunction 
 		extends SystemFunction
 {
 	/**
@@ -36,5 +36,10 @@ public class UpgradeFunction
 	public boolean isValid()
 	{
 		return false;
+	}
+	
+	public static void main(String[] args)
+	{
+		
 	}
 }
