@@ -32,6 +32,11 @@ public abstract class SystemFunction
 	/**
 	 * 
 	 */
+	public abstract void initialise();
+	
+	/**
+	 * 
+	 */
 	public abstract void execute();
 	
 	
@@ -41,6 +46,13 @@ public abstract class SystemFunction
 	 * @return boolean
 	 */
 	public abstract boolean isValid();
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public abstract boolean hasMultithreadingImplemented();
 	
 	
 	// Accessors

@@ -6,7 +6,7 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.functionality.packages;
+package com.goalpioneers.shipment.functionality.files;
 
 
 import com.goalpioneers.shipment.functionality.templates.SystemFunction;
@@ -16,9 +16,17 @@ import com.goalpioneers.shipment.functionality.templates.SystemFunction;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class RemovePackagesFunction 
+public class SizeFunction 
 	extends SystemFunction
 {
+	/**
+	 * 
+	 */
+	public SizeFunction()
+	{
+		
+	}
+	
 	/**
 	 *
 	 */
@@ -33,17 +41,17 @@ public class RemovePackagesFunction
 	 * 
 	 */
 	@Override
-	public void execute() 
+	public void execute()
 	{
 		
 	}
 	
 	/**
-	 *
+	 * 
 	 * @return
 	 */
 	@Override
-	public boolean isValid()
+	public final boolean hasMultithreadingImplemented() 
 	{
 		return false;
 	}
@@ -53,7 +61,7 @@ public class RemovePackagesFunction
 	 * @return
 	 */
 	@Override
-	public final boolean hasMultithreadingImplemented()
+	public boolean isValid()
 	{
 		return false;
 	}

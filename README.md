@@ -1,6 +1,8 @@
 # Valkyrier - Shipment
-[![CodeScene Code Health](https://codescene.io/projects/27528/status-badges/code-health)](https://codescene.io/projects/27528)
-[![CodeScene System Mastery](https://codescene.io/projects/27528/status-badges/system-mastery)](https://codescene.io/projects/27528)
+| 	    	  |
+|---------|
+| [![CodeScene Code Health](https://codescene.io/projects/28124/status-badges/code-health)](https://codescene.io/projects/28124)	     	 |
+| [![CodeScene System Mastery](https://codescene.io/projects/28124/status-badges/system-mastery)](https://codescene.io/projects/28124)        |
 
 Package manager written in java and is for Windows, Mac & Linux distributions.
 

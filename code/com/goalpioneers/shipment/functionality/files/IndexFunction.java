@@ -27,6 +27,15 @@ public class IndexFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
 	
 	/**
 	 * 
@@ -46,6 +55,18 @@ public class IndexFunction
 	{
 		return false;
 	}
+	
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented()
+	{
+		return false;
+	}
+	
 	
 	/**
 	 * 

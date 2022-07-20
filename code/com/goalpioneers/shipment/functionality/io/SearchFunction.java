@@ -27,6 +27,14 @@ public class SearchFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
 	
 	/**
 	 * 
@@ -43,6 +51,16 @@ public class SearchFunction
 	 */
 	@Override
 	public boolean isValid()
+	{
+		return false;
+	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented()
 	{
 		return false;
 	}

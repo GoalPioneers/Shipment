@@ -28,12 +28,33 @@ public class CopyFunction
 	}
 	
 	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	
+	/**
 	 * 
 	 */
 	@Override
 	public void execute() 
 	{
 		
+	}
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
+	{
+		return false;
 	}
 	
 	/**

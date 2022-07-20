@@ -27,6 +27,25 @@ public class CompressFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
+	{
+		return false;
+	}
 	
 	/**
 	 * 
