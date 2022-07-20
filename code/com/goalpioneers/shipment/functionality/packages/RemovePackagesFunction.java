@@ -20,6 +20,21 @@ public class RemovePackagesFunction
 	extends SystemFunction
 {
 	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	@Override
+	public boolean hasMultithreadingImplemented() {
+		return false;
+	}
+	
+	
+	/**
 	 * 
 	 */
 	@Override

@@ -19,6 +19,22 @@ import com.goalpioneers.shipment.functionality.templates.SystemFunction;
 public class UpgradePackagesFunction 
 		extends SystemFunction
 {
+	
+	@Override
+	public boolean hasMultithreadingImplemented() {
+		return false;
+	}
+	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	
 	/**
 	 * 
 	 */

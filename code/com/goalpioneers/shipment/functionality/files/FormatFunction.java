@@ -27,6 +27,15 @@ public class FormatFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
 	
 	/**
 	 * 
@@ -44,6 +53,11 @@ public class FormatFunction
 	@Override
 	public boolean isValid()
 	{
+		return false;
+	}
+	
+	@Override
+	public boolean hasMultithreadingImplemented() {
 		return false;
 	}
 	

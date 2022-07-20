@@ -27,6 +27,20 @@ public class HugePagesFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	@Override
+	public boolean hasMultithreadingImplemented() {
+		return false;
+	}
+	
 	
 	/**
 	 * 
