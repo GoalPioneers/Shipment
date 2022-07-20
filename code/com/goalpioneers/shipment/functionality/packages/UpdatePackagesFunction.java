@@ -19,6 +19,17 @@ import com.goalpioneers.shipment.functionality.templates.SystemFunction;
 public class UpdatePackagesFunction 
 		extends SystemFunction
 {
+	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	
 	/**
 	 * 
 	 */
@@ -34,6 +45,16 @@ public class UpdatePackagesFunction
 	 */
 	@Override
 	public boolean isValid()
+	{
+		return false;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
 	{
 		return false;
 	}

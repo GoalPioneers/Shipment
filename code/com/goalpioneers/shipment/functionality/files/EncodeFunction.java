@@ -27,6 +27,25 @@ public class EncodeFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
+	{
+		return false;
+	}
+	
 	
 	/**
 	 * 

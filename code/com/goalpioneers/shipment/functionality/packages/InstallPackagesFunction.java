@@ -20,12 +20,32 @@ public class InstallPackagesFunction
 	extends SystemFunction
 {
 	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
+	
+	/**
 	 * 
 	 */
 	@Override
 	public void execute() 
 	{
 		
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
+	{
+		return false;
 	}
 	
 	/**

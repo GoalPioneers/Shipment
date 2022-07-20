@@ -27,6 +27,14 @@ public class SettingFunction
 		
 	}
 	
+	/**
+	 * 
+	 */
+	@Override
+	public void initialise() 
+	{
+		
+	}
 	
 	/**
 	 * 
@@ -45,6 +53,16 @@ public class SettingFunction
 	public boolean isValid()
 	{
 		return false;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
+	{
+		return false;	
 	}
 	
 	/**

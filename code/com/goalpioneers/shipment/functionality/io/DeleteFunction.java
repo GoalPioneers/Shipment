@@ -27,6 +27,15 @@ public class DeleteFunction
 		
 	}
 	
+	/**
+	 *
+	 */
+	@Override
+	public void initialise()
+	{
+		
+	}
+	
 	
 	/**
 	 * 
@@ -38,11 +47,21 @@ public class DeleteFunction
 	}
 	
 	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public boolean hasMultithreadingImplemented() 
+	{
+		return false;
+	}
+	
+	/**
 	 *
 	 * @return
 	 */
 	@Override
-	public boolean isValid()
+	public final boolean isValid()
 	{
 		return false;
 	}
