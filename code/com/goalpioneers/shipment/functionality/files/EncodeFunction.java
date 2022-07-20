@@ -6,22 +6,23 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.functionality;
+package com.goalpioneers.shipment.functionality.files;
 
 
 import com.goalpioneers.shipment.functionality.templates.SystemFunction;
+
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class IndexFunction 
-		extends SystemFunction
+public class EncodeFunction 
+	extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public IndexFunction()
+	public EncodeFunction()
 	{
 		
 	}
@@ -31,7 +32,7 @@ public class IndexFunction
 	 * 
 	 */
 	@Override
-	public void execute() 
+	public void execute()
 	{
 		
 	}

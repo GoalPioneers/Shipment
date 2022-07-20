@@ -6,7 +6,7 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.functionality;
+package com.goalpioneers.shipment.functionality.configuration;
 
 
 import com.goalpioneers.shipment.functionality.templates.SystemFunction;
@@ -16,13 +16,13 @@ import com.goalpioneers.shipment.functionality.templates.SystemFunction;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class SearchFunction 
-	extends SystemFunction
+public class SettingFunction 
+		extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public SearchFunction()
+	public SettingFunction()
 	{
 		
 	}
@@ -32,7 +32,7 @@ public class SearchFunction
 	 * 
 	 */
 	@Override
-	public void execute()
+	public void execute() 
 	{
 		
 	}

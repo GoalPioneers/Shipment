@@ -6,22 +6,23 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.functionality;
+package com.goalpioneers.shipment.functionality.io;
 
 
 import com.goalpioneers.shipment.functionality.templates.SystemFunction;
+
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class FormatFunction 
-		extends SystemFunction
+public class HugePagesFunction 
+	extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public FormatFunction()
+	public HugePagesFunction()
 	{
 		
 	}

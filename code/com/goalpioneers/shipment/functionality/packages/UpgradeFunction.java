@@ -6,26 +6,19 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.functionality;
+package com.goalpioneers.shipment.functionality.packages;
 
 
 import com.goalpioneers.shipment.functionality.templates.SystemFunction;
+
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class CopyFunction 
+public class UpgradeFunction 
 		extends SystemFunction
 {
-	/**
-	 * 
-	 */
-	public CopyFunction()
-	{
-		
-	}
-	
 	/**
 	 * 
 	 */

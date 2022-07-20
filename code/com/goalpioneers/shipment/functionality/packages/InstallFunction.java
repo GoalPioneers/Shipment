@@ -6,27 +6,19 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.functionality;
+package com.goalpioneers.shipment.functionality.packages;
 
 
 import com.goalpioneers.shipment.functionality.templates.SystemFunction;
+
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class DeleteFunction 
-		extends SystemFunction
+public class InstallFunction 
+	extends SystemFunction
 {
-	/**
-	 * 
-	 */
-	public DeleteFunction()
-	{
-		
-	}
-	
-	
 	/**
 	 * 
 	 */
