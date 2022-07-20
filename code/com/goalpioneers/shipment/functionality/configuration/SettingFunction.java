@@ -55,8 +55,13 @@ public class SettingFunction
 		return false;
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	@Override
-	public boolean hasMultithreadingImplemented() {
+	public final boolean hasMultithreadingImplemented() 
+	{
 		return false;	
 	}
 	

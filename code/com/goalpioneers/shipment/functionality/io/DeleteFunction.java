@@ -46,8 +46,13 @@ public class DeleteFunction
 		
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	@Override
-	public boolean hasMultithreadingImplemented() {
+	public boolean hasMultithreadingImplemented() 
+	{
 		return false;
 	}
 	
@@ -56,7 +61,7 @@ public class DeleteFunction
 	 * @return
 	 */
 	@Override
-	public boolean isValid()
+	public final boolean isValid()
 	{
 		return false;
 	}

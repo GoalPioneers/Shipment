@@ -46,8 +46,13 @@ public class SizeFunction
 		
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	@Override
-	public boolean hasMultithreadingImplemented() {
+	public final boolean hasMultithreadingImplemented() 
+	{
 		return false;
 	}
 	

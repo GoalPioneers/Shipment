@@ -36,10 +36,6 @@ public class HugePagesFunction
 		
 	}
 	
-	@Override
-	public boolean hasMultithreadingImplemented() {
-		return false;
-	}
 	
 	
 	/**
@@ -57,6 +53,16 @@ public class HugePagesFunction
 	 */
 	@Override
 	public boolean isValid()
+	{
+		return false;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
 	{
 		return false;
 	}

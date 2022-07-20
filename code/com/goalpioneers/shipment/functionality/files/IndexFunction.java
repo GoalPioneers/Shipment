@@ -46,11 +46,6 @@ public class IndexFunction
 		
 	}
 	
-	@Override
-	public boolean hasMultithreadingImplemented() {
-		return false;
-	}
-	
 	/**
 	 *
 	 * @return
@@ -60,6 +55,18 @@ public class IndexFunction
 	{
 		return false;
 	}
+	
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented()
+	{
+		return false;
+	}
+	
 	
 	/**
 	 * 

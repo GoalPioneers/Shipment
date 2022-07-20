@@ -36,11 +36,6 @@ public class SearchFunction
 		
 	}
 	
-	@Override
-	public boolean hasMultithreadingImplemented() {
-		return false;
-	}
-	
 	/**
 	 * 
 	 */
@@ -56,6 +51,16 @@ public class SearchFunction
 	 */
 	@Override
 	public boolean isValid()
+	{
+		return false;
+	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented()
 	{
 		return false;
 	}

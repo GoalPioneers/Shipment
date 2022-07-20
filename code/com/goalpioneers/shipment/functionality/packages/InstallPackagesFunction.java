@@ -38,8 +38,13 @@ public class InstallPackagesFunction
 		
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	@Override
-	public boolean hasMultithreadingImplemented() {
+	public final boolean hasMultithreadingImplemented() 
+	{
 		return false;
 	}
 	

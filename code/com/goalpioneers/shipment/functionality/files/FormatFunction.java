@@ -56,8 +56,14 @@ public class FormatFunction
 		return false;
 	}
 	
+	
+	/**
+	 * 
+	 * @return
+	 */
 	@Override
-	public boolean hasMultithreadingImplemented() {
+	public final boolean hasMultithreadingImplemented() 
+	{
 		return false;
 	}
 	

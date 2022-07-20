@@ -20,11 +20,6 @@ public class UpgradePackagesFunction
 		extends SystemFunction
 {
 	
-	@Override
-	public boolean hasMultithreadingImplemented() {
-		return false;
-	}
-	
 	/**
 	 *
 	 */
@@ -50,6 +45,16 @@ public class UpgradePackagesFunction
 	 */
 	@Override
 	public boolean isValid()
+	{
+		return false;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	@Override
+	public final boolean hasMultithreadingImplemented() 
 	{
 		return false;
 	}
