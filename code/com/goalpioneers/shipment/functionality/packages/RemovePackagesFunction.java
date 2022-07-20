@@ -6,34 +6,44 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.actors.arguments;
+package com.goalpioneers.shipment.functionality.packages;
 
-import com.goalpioneers.shipment.domain.templates.DomainFacade;
+
+import com.goalpioneers.shipment.functionality.templates.SystemFunction;
 
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class ArgumentInterpreter 
+public class RemovePackagesFunction 
+	extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public ArgumentInterpreter()
+	@Override
+	public void execute() 
 	{
 		
 	}
 	
+	/**
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isValid()
+	{
+		return false;
+	}
 	
 	/**
 	 * 
-	 * @param domainState
-	 * @param arguments
+	 * @param args
 	 */
-	public void Interprete( DomainFacade domainState, Argument[] arguments )
+	public static void main( String[] args )
 	{
 		
 	}
-	
 }
