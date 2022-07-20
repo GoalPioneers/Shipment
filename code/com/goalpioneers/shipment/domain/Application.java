@@ -1,3 +1,11 @@
+/**
+ * Author: Goal Pioneers, Kent v. Madsen
+ * Contact: Kent.vejrup.madsen@goalpioneers.com
+ * Company: Goal-Pioneers, 41157089
+ * Links
+ ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
+ ** Issues: https://github.com/GoalPioneers/Shipment/issues
+ */
 package com.goalpioneers.shipment.domain;
 
 
@@ -26,7 +34,13 @@ public class Application
 				new DomainState( true )
 		);
 		
-		this.setActors( new ArrayList<>() );
+		this.setActors( 
+			new ArrayList<>() 
+		);
+		
+		this.setToBeRemoved(
+				new ArrayList<>()
+		);
 		
 		this.getActors().add( 
 			new CommandConsoleActor( 
@@ -34,38 +48,10 @@ public class Application
 			) 
 		);
 		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
-		this.getActors().add(
-				new CommandConsoleActor(
-						this.getDomainState()
-				)
-		);
-		
 		this.setArgumentsActor(
 			new ArgumentParserActor( 
 				this.getDomainState() 
 			)
-		);
-		
-		this.setToBeRemoved(
-			new ArrayList<>() 
 		);
 	}
 	

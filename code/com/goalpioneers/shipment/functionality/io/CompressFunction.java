@@ -6,32 +6,53 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.actors.commands;
+package com.goalpioneers.shipment.functionality.io;
 
-import com.goalpioneers.shipment.domain.templates.DomainFacade;
-import com.goalpioneers.shipment.actors.arguments.Argument;
+
+import com.goalpioneers.shipment.functionality.templates.SystemFunction;
 
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class CommandInterpreter 
+public class CompressFunction
+	extends SystemFunction
 {
 	/**
 	 * 
 	 */
-	public CommandInterpreter()
+	public CompressFunction()
+	{
+		
+	}
+	
+	
+	/**
+	 * 
+	 */
+	@Override
+	public void execute() 
 	{
 		
 	}
 	
 	/**
 	 * 
-	 * @param domainState
+	 * @return
+	 */
+	@Override
+	public boolean isValid() 
+	{
+		return false;
+	}
+	
+	
+	/**
+	 * 
 	 * @param args
 	 */
-	public void Interprete( DomainFacade domainState, Argument[] args )
+	public static void main( String[] args )
 	{
 		
 	}

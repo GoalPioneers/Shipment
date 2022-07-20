@@ -1,3 +1,11 @@
+/**
+ * Author: Goal Pioneers, Kent v. Madsen
+ * Contact: Kent.vejrup.madsen@goalpioneers.com
+ * Company: Goal-Pioneers, 41157089
+ * Links
+ ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
+ ** Issues: https://github.com/GoalPioneers/Shipment/issues
+ */
 package com.goalpioneers.shipment.functionality.templates;
 
 
@@ -8,9 +16,16 @@ package com.goalpioneers.shipment.functionality.templates;
 public abstract class SystemFunction 
 {
 	// Variables
+		// System messages
 	private boolean errorOccurred = false;
 	
 	private String errorMessage = null;
+	
+		// Debug
+	private boolean isDebugging;
+	
+		// General options flags
+	private boolean isMultithreadedEnabled;
 	
 	
 	// Code
@@ -64,4 +79,41 @@ public abstract class SystemFunction
 	{
 		this.errorMessage = errorMessage;
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public final boolean isDebugging() 
+	{
+		return isDebugging;
+	}
+	
+	/**
+	 * 
+	 * @param debugging
+	 */
+	public final void setDebugging( boolean debugging ) 
+	{
+		isDebugging = debugging;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public final boolean isMultithreadedEnabled() 
+	{
+		return isMultithreadedEnabled;
+	}
+	
+	/**
+	 * 
+	 * @param multithreadedable
+	 */
+	protected final void setMultithreadedEnabled( boolean multithreadedable ) 
+	{
+		isMultithreadedEnabled = multithreadedable;
+	}
+	
 }
