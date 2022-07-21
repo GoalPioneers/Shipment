@@ -9,7 +9,6 @@
 package com.goalpioneers.shipment.domain.templates;
 
 
-
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
