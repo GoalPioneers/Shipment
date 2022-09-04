@@ -6,7 +6,7 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment;
+package build;
 
 import com.goalpioneers.shipment.domain.Application;
 import com.goalpioneers.shipment.facade.setup.SetupBuilder;
