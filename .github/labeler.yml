@@ -1,0 +1,20 @@
+documentation:
+  - 'docs/**/*'
+
+workflows:
+  - '.github/**/*'
+
+code:
+  - 'code/**/*'
+
+scripts:
+  - 'scripts/**/*'
+
+resources:
+  - 'resources/**/*'
+
+libraries:
+  - 'modules/**/*'
+
+tests:
+  - 'code/test/**/*'
