@@ -63,6 +63,8 @@ public class ApplicationEntry
 	{
 		this.getBuilder().add( new SetupByConfiguration() );
 		this.getBuilder().add( new SetupByCache() );
+		
+		this.getBuilder().build();
 	}
 	
 	/**
@@ -114,6 +116,7 @@ public class ApplicationEntry
 		this.builder = builder;
 	}
 	
+	
 	// Entries
 	/**
 	 * 
@@ -132,7 +135,8 @@ public class ApplicationEntry
 		{
 			entry = new ApplicationEntry( arguments );
 		}
-
+		
+		entry.setup();
 		entry.run();
 	}
 }

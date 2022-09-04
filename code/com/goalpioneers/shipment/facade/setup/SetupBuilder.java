@@ -26,7 +26,7 @@ public class SetupBuilder
 	
 	
 	// Functions: Public
-	public void build()
+	public final void build()
 		//throws Exception
 	{
 		this.sortByPriority();
@@ -42,17 +42,26 @@ public class SetupBuilder
 			{
 				//throw new Exception( "Setup failed:" );
 				// Figure out what's wrong
-				
 			}
 		}
 	}
 	
-	public SetupFacade retrieveByIdentity( int idx )
+	
+	/**
+	 *
+	 * @param idx
+	 * @return
+	 */
+	public final SetupFacade retrieveByIdentity( int idx )
 	{
 		return this.getBuffers().get( idx );
 	}
 	
-	public void add( SetupFacade facade )
+	/**
+	 *
+	 * @param facade
+	 */
+	public final void add( SetupFacade facade )
 	{
 		if( facade.getApplication() == null )
 		{
@@ -64,41 +73,67 @@ public class SetupBuilder
 		this.getBuffers().add( facade );
 	}
 	
-	public void removeByIdentity( int setupIdx )
+	/**
+	 *
+	 * @param setupIdx
+	 */
+	public final void removeByIdentity( int setupIdx )
 	{
 		this.getBuffers().remove( setupIdx );
 	}
 	
 	
 	// Sort
-	protected void sortByPriority()
+	/**
+	 *
+	 */
+	protected final void sortByPriority()
 	{
 		Collections.sort( this.getBuffers());
 	}
 	
 	
 	// Accessors
-	public List <SetupFacade> getBuffers()
+	/**
+	 *
+	 * @return
+	 */
+	public final List <SetupFacade> getBuffers()
 	{
 		return this.buffers;
 	}
 	
-	public Application getApplication()
+	/**
+	 *
+	 * @return
+	 */
+	public final Application getApplication()
 	{
 		return this.application;
 	}
 	
-	public void setBuffers( List <SetupFacade> buffers )
+	/**
+	 *
+	 * @param buffers
+	 */
+	public final void setBuffers( List <SetupFacade> buffers )
 	{
 		this.buffers = buffers;
 	}
 	
-	public void setApplication( Application application )
+	/**
+	 *
+	 * @param application
+	 */
+	public final void setApplication( Application application )
 	{
 		this.application = application;
 	}
 	
-	
+	/**
+	 *
+	 * @return
+	 */
 	@Override
 	public final String toString()
 	{

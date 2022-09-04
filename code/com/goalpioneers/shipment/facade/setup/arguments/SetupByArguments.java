@@ -19,7 +19,9 @@ public class SetupByArguments
     {
         super( application );
         this.setName( "Setup by Arguments" );
+        this.setPriority( 1 );
     }
+    
     
     // Variables
     private String[] arguments = null;
@@ -37,11 +39,19 @@ public class SetupByArguments
     
     
     // Accessors
+    /**
+     *
+     * @return
+     */
     public final String[] getArguments()
     {
         return this.arguments;
     }
     
+    /**
+     *
+     * @param arguments
+     */
     public final void setArguments( String[] arguments )
     {
         this.arguments = arguments;
