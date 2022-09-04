@@ -20,10 +20,10 @@ import com.goalpioneers.shipment.facade.setup.configuration.SetupByConfiguration
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class ApplicationEntry
+public class PublicEntry
 {
 	//
-	public ApplicationEntry()
+	public PublicEntry()
 	{
 		this( null );
 	}
@@ -31,7 +31,7 @@ public class ApplicationEntry
 	/**
 	 * 
 	 */
-	public ApplicationEntry( String[] arguments )
+	public PublicEntry(String[] arguments)
 	{
 		this.setApplication( 
 			new Application() 
@@ -125,15 +125,15 @@ public class ApplicationEntry
 	public static void main( String[] arguments )
 	{
 		int size_of_args = arguments.length;
-		ApplicationEntry entry = null;
+		PublicEntry entry = null;
 
 		if( size_of_args == 0 )
 		{
-			entry = new ApplicationEntry();
+			entry = new PublicEntry();
 		}
 		else
 		{
-			entry = new ApplicationEntry( arguments );
+			entry = new PublicEntry( arguments );
 		}
 		
 		entry.setup();
