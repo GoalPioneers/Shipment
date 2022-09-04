@@ -10,7 +10,12 @@ public class SetupByArguments
     public SetupByArguments( Application app )
     {
         super( app );
+        this.setPriority( 1 );
     }
-
-
+    
+    @Override
+    public boolean setup()
+    {
+        return false;
+    }
 }

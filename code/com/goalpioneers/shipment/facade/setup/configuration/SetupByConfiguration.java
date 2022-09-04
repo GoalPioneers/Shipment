@@ -11,6 +11,12 @@ public class SetupByConfiguration
     public SetupByConfiguration( Application application )
     {
         super( application );
+        this.setPriority( 0 );
     }
-
+    
+    @Override
+    public boolean setup()
+    {
+        return false;
+    }
 }

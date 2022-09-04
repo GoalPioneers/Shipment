@@ -3,21 +3,36 @@ package com.goalpioneers.shipment.facade.setup;
 import com.goalpioneers.shipment.domain.Application;
 
 
-public class SetupFacade
+public abstract class SetupFacade
 {
     public SetupFacade( Application application )
     {
         this.setApplication( application );
     }
+    
+    public abstract boolean setup();
 
-    //
+    // Variables
     private Application application = null;
-
+    
+    private int priority = 0;
+    
+    
+    public final int getPriority()
+    {
+        return priority;
+    }
+    
+    protected final void setPriority( int priority )
+    {
+        this.priority = priority;
+    }
+    
     /**
      *
      * @return
      */
-    public Application getApplication()
+    public final Application getApplication()
     {
         return application;
     }
@@ -26,7 +41,7 @@ public class SetupFacade
      *
      * @param application
      */
-    public void setApplication( Application application )
+    public final void setApplication( Application application )
     {
         this.application = application;
     }

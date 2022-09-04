@@ -11,6 +11,12 @@ public class SetupByCache
     public SetupByCache( Application application )
     {
         super( application );
+        this.setPriority( 2 );
     }
-
+    
+    @Override
+    public boolean setup()
+    {
+        return false;
+    }
 }
