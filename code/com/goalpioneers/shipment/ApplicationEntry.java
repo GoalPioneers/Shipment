@@ -9,6 +9,7 @@
 package com.goalpioneers.shipment;
 
 import com.goalpioneers.shipment.domain.Application;
+import com.goalpioneers.shipment.facade.setup.SetupBuilder;
 
 
 /**
@@ -41,8 +42,10 @@ public class ApplicationEntry
 	}
 
 
-	//
+	// Variables
 	private Application application = null;
+	
+	private SetupBuilder builder = null;
 	
 	
 	// code
@@ -57,7 +60,7 @@ public class ApplicationEntry
 	}
 	
 	
-	//
+	// Accessors
 	/**
 	 * 
 	 * @return
@@ -77,6 +80,23 @@ public class ApplicationEntry
 		this.application = application;
 	}
 	
+	/**
+	 *
+	 * @return
+	 */
+	public final SetupBuilder getBuilder()
+	{
+		return this.builder;
+	}
+	
+	/**
+	 *
+	 * @param builder
+	 */
+	public final void setBuilder( SetupBuilder builder )
+	{
+		this.builder = builder;
+	}
 	
 	/**
 	 * 

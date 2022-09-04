@@ -1,6 +1,7 @@
 package com.goalpioneers.shipment.facade.setup;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -14,20 +15,40 @@ public class SetupBuilder
 	public void build()
 		throws Exception
 	{
-	
+		this.sortByPriority();
+		
+		int idx;
+		for( idx = 0;
+			 idx < this.getBuffers().size();
+			 idx ++)
+		{
+			SetupFacade facade = this.getBuffers().get( idx );
+			
+			if( !facade.setup() )
+			{
+				throw new Exception( "Setup failed:" );
+				// Figure out what's wrong
+				
+			}
+		}
 	}
 	
-	public SetupFacade retrieveByIdentity(int idx)
+	protected void sortByPriority()
+	{
+		Collections.sort( this.getBuffers() );
+	}
+	
+	public SetupFacade retrieveByIdentity( int idx )
 	{
 		return this.getBuffers().get( idx );
 	}
 	
-	public void addSetup( SetupFacade facade )
+	public void add( SetupFacade facade )
 	{
 		this.getBuffers().add( facade );
 	}
 	
-	public void removeSetupByIdentity( int setupIdx )
+	public void removeByIdentity( int setupIdx )
 	{
 		this.getBuffers().remove( setupIdx );
 	}

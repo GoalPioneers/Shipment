@@ -4,6 +4,7 @@ import com.goalpioneers.shipment.domain.Application;
 
 
 public abstract class SetupFacade
+    implements Comparable<SetupFacade>
 {
     public SetupFacade( Application application )
     {
@@ -44,5 +45,11 @@ public abstract class SetupFacade
     public final void setApplication( Application application )
     {
         this.application = application;
+    }
+    
+    @Override
+    public int compareTo( SetupFacade o )
+    {
+        return 0;
     }
 }
