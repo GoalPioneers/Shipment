@@ -12,6 +12,8 @@ import com.goalpioneers.shipment.domain.Application;
 import com.goalpioneers.shipment.facade.setup.SetupBuilder;
 import com.goalpioneers.shipment.facade.setup.SetupFacade;
 import com.goalpioneers.shipment.facade.setup.arguments.SetupByArguments;
+import com.goalpioneers.shipment.facade.setup.cache.SetupByCache;
+import com.goalpioneers.shipment.facade.setup.configuration.SetupByConfiguration;
 
 
 /**
@@ -45,9 +47,14 @@ public class ApplicationEntry
 		{
 			// Set params
 			SetupFacade sf = new SetupByArguments();
-			
 			this.getBuilder().add( sf );
 		}
+		
+		this.getBuilder().add( new SetupByConfiguration() );
+		this.getBuilder().add( new SetupByCache() );
+		this.getBuilder().add( new SetupByArguments() );
+		
+		this.getBuilder().build();
 	}
 
 

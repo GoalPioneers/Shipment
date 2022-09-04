@@ -10,17 +10,19 @@ public class SetupByArguments
     public SetupByArguments()
     {
         super( null );
+        this.setName( "Setup by Arguments" );
         this.setPriority( 1 );
     }
     
     public SetupByArguments( Application application )
     {
         super( application );
+        this.setName( "Setup by Arguments" );
     }
     
     @Override
     public boolean setup()
     {
-        return false;
+        return true;
     }
 }

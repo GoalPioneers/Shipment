@@ -11,18 +11,20 @@ public class SetupByCache
     public SetupByCache()
     {
         super( null );
+        this.setName( "Setup by Cache" );
         this.setPriority( 2 );
     }
     
     public SetupByCache( Application application )
     {
         super( application );
+        this.setName( "Setup by Cache" );
         this.setPriority( 2 );
     }
     
     @Override
     public boolean setup()
     {
-        return false;
+        return true;
     }
 }

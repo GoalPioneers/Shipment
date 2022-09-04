@@ -27,7 +27,7 @@ public class SetupBuilder
 	
 	// Functions: Public
 	public void build()
-		throws Exception
+		//throws Exception
 	{
 		this.sortByPriority();
 		
@@ -40,7 +40,7 @@ public class SetupBuilder
 			
 			if( !facade.setup() )
 			{
-				throw new Exception( "Setup failed:" );
+				//throw new Exception( "Setup failed:" );
 				// Figure out what's wrong
 				
 			}
@@ -96,5 +96,22 @@ public class SetupBuilder
 	public void setApplication( Application application )
 	{
 		this.application = application;
+	}
+	
+	
+	@Override
+	public final String toString()
+	{
+		int idx;
+		
+		for( idx = 0;
+			 idx < this.buffers.size();
+			 idx++ )
+		{
+			SetupFacade sf = this.buffers.get( idx );
+			System.out.println(sf.getName());
+		}
+		
+		return super.toString();
 	}
 }

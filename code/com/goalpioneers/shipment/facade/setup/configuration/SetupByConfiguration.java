@@ -11,18 +11,20 @@ public class SetupByConfiguration
     public SetupByConfiguration()
     {
         super( null );
+        this.setName( "Setup by Configuration" );
         this.setPriority( 0 );
     }
     
     public SetupByConfiguration( Application application )
     {
         super( application );
+        this.setName( "Setup by Configuration" );
         this.setPriority( 0 );
     }
     
     @Override
     public boolean setup()
     {
-        return false;
+        return true;
     }
 }

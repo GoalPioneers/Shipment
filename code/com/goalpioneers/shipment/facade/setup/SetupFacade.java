@@ -16,17 +16,30 @@ public abstract class SetupFacade
         this.setApplication( application );
     }
     
+    
     // Extend
     public abstract boolean setup();
 
     
     // Variables
+    private String name = "SetupFacade";
+    
     private Application application;
     
     private int priority = 0;
     
     
     // Accessors
+    public final String getName()
+    {
+        return this.name;
+    }
+    
+    protected final void setName( String name )
+    {
+        this.name = name;
+    }
+    
     /**
      *
      * @return
@@ -66,12 +79,24 @@ public abstract class SetupFacade
     //
     /**
      *
-     * @param o the object to be compared.
+     * @param next the object to be compared.
      * @return
      */
     @Override
-    public int compareTo( SetupFacade o )
+    public int compareTo( SetupFacade next )
     {
-        return 0;
+        return Integer.compare( this.getPriority(),
+                                next.getPriority() );
+    }
+    
+    
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString()
+    {
+        return super.toString();
     }
 }
