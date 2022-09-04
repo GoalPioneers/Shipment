@@ -35,7 +35,7 @@ public class ApplicationEntry
 		if( !( arguments == null ) )
 		{
 			// Set params
-			System.out.println('t');
+
 		}
 
 	}
