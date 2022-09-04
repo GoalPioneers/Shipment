@@ -27,6 +27,7 @@ public abstract class SetupFacade
     private Application application;
     
     private int priority = 0;
+    private boolean isDone = false;
     
     
     // Accessors
@@ -74,6 +75,25 @@ public abstract class SetupFacade
     public final void setApplication( Application application )
     {
         this.application = application;
+    }
+    
+    /**
+     *
+     * @return
+     */
+    public boolean isDone()
+    {
+        return this.isDone;
+    }
+    
+    
+    /**
+     *
+     * @param done
+     */
+    public void setDone( boolean done )
+    {
+        isDone = done;
     }
     
     //

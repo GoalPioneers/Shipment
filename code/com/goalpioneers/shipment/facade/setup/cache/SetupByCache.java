@@ -22,9 +22,13 @@ public class SetupByCache
         this.setPriority( 2 );
     }
     
+    /**
+     *
+     * @return
+     */
     @Override
-    public boolean setup()
+    public final boolean setup()
     {
-        return true;
+        return this.isDone();
     }
 }

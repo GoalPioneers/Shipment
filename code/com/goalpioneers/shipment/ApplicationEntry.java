@@ -46,15 +46,9 @@ public class ApplicationEntry
 		if( !( arguments == null ) )
 		{
 			// Set params
-			SetupFacade sf = new SetupByArguments();
+			SetupFacade sf = new SetupByArguments( arguments );
 			this.getBuilder().add( sf );
 		}
-		
-		this.getBuilder().add( new SetupByConfiguration() );
-		this.getBuilder().add( new SetupByCache() );
-		this.getBuilder().add( new SetupByArguments() );
-		
-		this.getBuilder().build();
 	}
 
 
@@ -65,6 +59,12 @@ public class ApplicationEntry
 	
 	
 	// code
+	public final void setup()
+	{
+		this.getBuilder().add( new SetupByConfiguration() );
+		this.getBuilder().add( new SetupByCache() );
+	}
+	
 	/**
 	 * The applications 3 phases. with specific purposes in mind.
 	 */

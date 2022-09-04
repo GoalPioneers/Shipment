@@ -7,22 +7,43 @@ import com.goalpioneers.shipment.facade.setup.SetupFacade;
 public class SetupByArguments
     extends SetupFacade
 {
-    public SetupByArguments()
+    public SetupByArguments( String[] arguments )
     {
         super( null );
         this.setName( "Setup by Arguments" );
         this.setPriority( 1 );
     }
     
-    public SetupByArguments( Application application )
+    public SetupByArguments( Application application,
+                             String[] Arguments )
     {
         super( application );
         this.setName( "Setup by Arguments" );
     }
     
+    // Variables
+    private String[] arguments = null;
+    
+    
+    /**
+     *
+     * @return
+     */
     @Override
-    public boolean setup()
+    public final boolean setup()
     {
-        return true;
+        return this.isDone();
+    }
+    
+    
+    // Accessors
+    public final String[] getArguments()
+    {
+        return this.arguments;
+    }
+    
+    public final void setArguments( String[] arguments )
+    {
+        this.arguments = arguments;
     }
 }

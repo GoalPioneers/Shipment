@@ -22,9 +22,14 @@ public class SetupByConfiguration
         this.setPriority( 0 );
     }
     
+    
+    /**
+     *
+     * @return
+     */
     @Override
-    public boolean setup()
+    public final boolean setup()
     {
-        return true;
+        return this.isDone();
     }
 }
