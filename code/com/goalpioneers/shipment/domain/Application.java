@@ -8,14 +8,8 @@
  */
 package com.goalpioneers.shipment.domain;
 
-
 import java.util.ArrayList;
 import java.util.List;
-
-import com.goalpioneers.components.actors.arguments.ArgumentParserActor;
-import com.goalpioneers.components.actors.commands.CommandConsoleActor;
-import com.goalpioneers.shipment.domain.templates.ActorFacade;
-import com.goalpioneers.shipment.domain.templates.DomainFacade;
 
 
 /**
@@ -29,216 +23,42 @@ public class Application
 	 */
 	public Application()
 	{
-		this.setDomainState(
-				new DomainState( true )
-		);
-		
-		this.setActors( 
-			new ArrayList<>() 
-		);
-		
-		this.setToBeRemoved(
-				new ArrayList<>()
-		);
-		
-		this.getActors().add( 
-			new CommandConsoleActor( 
-				this.getDomainState() 
-			) 
-		);
-		
-		this.setArgumentsActor(
-			new ArgumentParserActor( 
-				this.getDomainState() 
-			)
+		this.setProcedure(
+			new Procedure()
 		);
 	}
-	
-	
-	// Variables
-	/**
-	 * 
-	 */
-	private DomainFacade domainState;
-	
-	/**
-	 * 
-	 */
-	private List<ActorFacade> actors = null;
-	
-	/**
-	 * 
-	 */
-	private ArgumentParserActor argumentsActor = null;
-	
-	/**
-	 * 
-	 */
-	private List<Integer> toBeRemoved = null;
-	
-	
-	// Code
-	/**
-	 * 
-	 * @param arguments
-	 */
-	public void insertionOfArguments( String[] arguments )
-	{
-		this.getArgumentsActor().insertArguments( arguments );
-	}
-	
-	
-	/**
-	 * Initialises aspects of the application and configurations needed to make it run
-	 */
+
 	public void initialise()
 	{
-		this.getArgumentsActor().run();
-	}
-	
-	/**
-	 * Executes the application functions
-	 */
-	public void execute()
-	{
-		boolean stopNoActors = false;
-		
-		while( this.getDomainState().isToKeepLoop() && !stopNoActors )
-		{
-			int idx = 0;
-			
-			int sizeOf = this.getActors().size();
-			
-			if( sizeOf == 0 )
-			{
-				stopNoActors = true;
-			}
-			
-			for( idx = 0; 
-			     idx < sizeOf; 
-				 idx++ )
-			{
-				ActorFacade currentFacade = this.getActors().get( idx );
-				currentFacade.run();
-				
-				// Add to removal list
-				if( !currentFacade.isToRun() )
-				{
-					boolean exist = this.getToBeRemoved().contains( idx );
-					
-					// Only if it isn't already on the list, NOT Logic
-					if( !exist )
-					{
-						this.getToBeRemoved().add( idx );
-					}
-				}
-			}
-			
-			this.removeActors();
-		}
-	}
-	
-	/**
-	 * Cleans up files and exits application gracefully
-	 */
-	public void gc()
-	{
-		
-	}
-	
-	private void sortRemoval()
-	{
-		List<Integer> l = this.getToBeRemoved();
 
-		this.setToBeRemoved( l );
 	}
-	
-	/**
-	 * 
-	 */
-	protected void removeActors()
+
+	public void execution()
 	{
-		int idx = 0;
-		int sizeOf = this.getToBeRemoved().size();
-		
-		this.sortRemoval();
-		
-		for( idx = 0; 
-		     idx < sizeOf; 
-			 idx++ )
+		while( this.procedure.isToContinue() )
 		{
-			int removeIdx = this.getToBeRemoved().get( idx );
-			
-			this.getActors().remove( removeIdx );
+			this.procedure.execute();
 		}
-		
-		this.getToBeRemoved().clear();
 	}
-	
-	
+
+	public void clean()
+	{
+
+	}
+
+	// Variables
+	private Procedure procedure = null;
+
 	// Accessors
-	/**
-	 * 
-	 * @return
-	 */
-	public DomainFacade getDomainState() 
+		// Getters
+	public Procedure getProcedure()
 	{
-		return this.domainState;
+		return this.procedure;
 	}
-	
-	
-	/**
-	 * 
-	 * @param domainState
-	 */
-	public void setDomainState( DomainFacade domainState ) 
+
+		// Setters
+	public void setProcedure( Procedure procedure )
 	{
-		this.domainState = domainState;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public ArgumentParserActor getArgumentsActor() 
-	{
-		return this.argumentsActor;
-	}
-	
-	/**
-	 * 
-	 * @param argumentsActor
-	 */
-	public void setArgumentsActor( ArgumentParserActor argumentsActor ) 
-	{
-		this.argumentsActor = argumentsActor;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public List<ActorFacade> getActors() 
-	{
-		return this.actors;
-	}
-	
-	/**
-	 * 
-	 * @param actors
-	 */
-	public void setActors( List<ActorFacade> actors ) 
-	{
-		this.actors = actors;
-	}
-	
-	private List<Integer> getToBeRemoved() 
-	{
-		return toBeRemoved;
-	}
-	
-	private void setToBeRemoved( List<Integer> toBeRemoved ) 
-	{
-		this.toBeRemoved = toBeRemoved;
+		this.procedure = procedure;
 	}
 }

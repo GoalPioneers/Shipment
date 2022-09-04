@@ -31,8 +31,13 @@ public class ApplicationEntry
 		this.setApplication( 
 			new Application() 
 		);
-		
-		this.getApplication().insertionOfArguments( arguments );
+
+		if( !( arguments == null ) )
+		{
+			// Set params
+			System.out.println('t');
+		}
+
 	}
 	
 	//
@@ -45,9 +50,9 @@ public class ApplicationEntry
 	 */
 	public final void run()
 	{
-		this.getApplication().initialise();
-		this.getApplication().execute();
-		this.getApplication().gc();
+		application.initialise();
+		application.execution();
+		application.clean();
 	}
 	
 	
@@ -78,7 +83,18 @@ public class ApplicationEntry
 	 */
 	public static void main( String[] arguments )
 	{
-		ApplicationEntry entry = new ApplicationEntry( arguments );
+		int size_of_args = arguments.length;
+		ApplicationEntry entry = null;
+
+		if( size_of_args == 0 )
+		{
+			entry = new ApplicationEntry();
+		}
+		else
+		{
+			entry = new ApplicationEntry( arguments );
+		}
+
 		entry.run();
 	}
 }
