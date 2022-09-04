@@ -15,3 +15,6 @@ resources:
 
 libraries:
   - 'modules/**/*'
+
+tests:
+  - 'code/test/**/*'
