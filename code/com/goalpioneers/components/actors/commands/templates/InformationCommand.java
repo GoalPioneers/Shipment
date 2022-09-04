@@ -6,24 +6,15 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.domain.templates;
+package com.goalpioneers.components.actors.commands.templates;
 
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public interface ActorFacade 
+public abstract class InformationCommand 
+	extends SystemCommand
 {
-	/**
-	 * 
-	 * @return
-	 */
-	public boolean isToRun();
 	
-	
-	/**
-	 * 
-	 */
-	public void run();
 }

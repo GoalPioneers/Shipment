@@ -6,24 +6,28 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.domain.templates;
+package com.goalpioneers.components.actors.arguments.templates;
 
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public interface ActorFacade 
+public interface ArgumentParserFacade 
 {
 	/**
 	 * 
-	 * @return
+	 * @param arguments
 	 */
-	public boolean isToRun();
-	
+	public void insertArguments( String[] arguments );
 	
 	/**
 	 * 
 	 */
-	public void run();
+	public void parse();
+	
+	/**
+	 * 
+	 */
+	public void setup();
 }

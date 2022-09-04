@@ -12,8 +12,8 @@ package com.goalpioneers.shipment.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.goalpioneers.shipment.actors.arguments.ArgumentParserActor;
-import com.goalpioneers.shipment.actors.commands.CommandConsoleActor;
+import com.goalpioneers.components.actors.arguments.ArgumentParserActor;
+import com.goalpioneers.components.actors.commands.CommandConsoleActor;
 import com.goalpioneers.shipment.domain.function.RemoveComparator;
 import com.goalpioneers.shipment.domain.templates.ActorFacade;
 import com.goalpioneers.shipment.domain.templates.DomainFacade;

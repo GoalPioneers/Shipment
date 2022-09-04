@@ -6,24 +6,24 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.domain.templates;
+package com.goalpioneers.debug.junit4.tests;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public interface ActorFacade 
+public class TestSystem 
 {
 	/**
 	 * 
-	 * @return
 	 */
-	public boolean isToRun();
-	
-	
-	/**
-	 * 
-	 */
-	public void run();
+	@Test
+	public void testPrint()
+	{
+		assertEquals(true, false);
+	}
 }

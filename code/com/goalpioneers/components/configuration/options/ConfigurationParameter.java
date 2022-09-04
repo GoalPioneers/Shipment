@@ -6,46 +6,54 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.domain;
-
-
-import com.goalpioneers.shipment.domain.templates.DomainFacade;
+package com.goalpioneers.components.configuration.options;
 
 
 /**
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class DomainState 
-	implements DomainFacade
+public class ConfigurationParameter 
 {
-	public DomainState( Boolean keepLoopState )
+	/**
+	 * 
+	 */
+	public ConfigurationParameter()
 	{
-		this.setKeepLoop( keepLoopState );
+		
 	}
 	
 	
 	// Variables
-	private boolean keepLoop;
+	private String parameter = null;
 	
-	//
+	// Accessors
+	/**
+	 * 
+	 * @return
+	 */
+	public String getParameter() 
+	{
+		return this.parameter;
+	}
+	
+	/**
+	 * 
+	 * @param parameter
+	 */
+	public void setParameter( String parameter ) 
+	{
+		this.parameter = parameter;
+	}
+	
+	// 
 	/**
 	 * 
 	 * @return
 	 */
 	@Override
-	public boolean isToKeepLoop() 
+	public String toString() 
 	{
-		return this.keepLoop;
-	}
-	
-	/**
-	 * 
-	 * @param keepLoop
-	 */
-	@Override
-	public void setKeepLoop( boolean keepLoop ) 
-	{
-		this.keepLoop = keepLoop;
+		return this.parameter;
 	}
 }

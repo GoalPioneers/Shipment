@@ -6,8 +6,7 @@
  ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
  ** Issues: https://github.com/GoalPioneers/Shipment/issues
  */
-package com.goalpioneers.shipment.domain;
-
+package com.goalpioneers.components.actors.arguments;
 
 import com.goalpioneers.shipment.domain.templates.DomainFacade;
 
@@ -16,36 +15,25 @@ import com.goalpioneers.shipment.domain.templates.DomainFacade;
  * @author Kent v. Madsen
  * @author Goal Pioneers
  */
-public class DomainState 
-	implements DomainFacade
+public class ArgumentInterpreter 
 {
-	public DomainState( Boolean keepLoopState )
-	{
-		this.setKeepLoop( keepLoopState );
-	}
-	
-	
-	// Variables
-	private boolean keepLoop;
-	
-	//
 	/**
 	 * 
-	 * @return
 	 */
-	@Override
-	public boolean isToKeepLoop() 
+	public ArgumentInterpreter()
 	{
-		return this.keepLoop;
+		
 	}
+	
 	
 	/**
 	 * 
-	 * @param keepLoop
+	 * @param domainState
+	 * @param arguments
 	 */
-	@Override
-	public void setKeepLoop( boolean keepLoop ) 
+	public void Interprete( DomainFacade domainState, Argument[] arguments )
 	{
-		this.keepLoop = keepLoop;
+		
 	}
+	
 }
