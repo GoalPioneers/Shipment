@@ -8,9 +8,6 @@
  */
 package com.goalpioneers.shipment.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 /**
  * @author Kent v. Madsen
