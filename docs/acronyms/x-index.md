@@ -1,0 +1,4 @@
+# Acronyms - X index
+
+
+## Footnotes
