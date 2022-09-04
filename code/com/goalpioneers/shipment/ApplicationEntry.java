@@ -10,6 +10,8 @@ package com.goalpioneers.shipment;
 
 import com.goalpioneers.shipment.domain.Application;
 import com.goalpioneers.shipment.facade.setup.SetupBuilder;
+import com.goalpioneers.shipment.facade.setup.SetupFacade;
+import com.goalpioneers.shipment.facade.setup.arguments.SetupByArguments;
 
 
 /**
@@ -32,13 +34,20 @@ public class ApplicationEntry
 		this.setApplication( 
 			new Application() 
 		);
-
+		
+		this.setBuilder(
+			new SetupBuilder(
+				this.getApplication()
+			)
+		);
+		
 		if( !( arguments == null ) )
 		{
 			// Set params
-
+			SetupFacade sf = new SetupByArguments();
+			
+			this.getBuilder().add( sf );
 		}
-
 	}
 
 
@@ -98,6 +107,7 @@ public class ApplicationEntry
 		this.builder = builder;
 	}
 	
+	// Entries
 	/**
 	 * 
 	 * @param arguments

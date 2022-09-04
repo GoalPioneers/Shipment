@@ -8,6 +8,12 @@ import com.goalpioneers.shipment.facade.setup.SetupFacade;
 public class SetupByCache
     extends SetupFacade
 {
+    public SetupByCache()
+    {
+        super( null );
+        this.setPriority( 2 );
+    }
+    
     public SetupByCache( Application application )
     {
         super( application );

@@ -1,5 +1,7 @@
 package com.goalpioneers.shipment.facade.setup;
 
+import com.goalpioneers.shipment.domain.Application;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -7,11 +9,23 @@ import java.util.List;
 
 public class SetupBuilder
 {
-	public SetupBuilder()
+	public SetupBuilder( Application application )
 	{
-		this.setBuffers( new ArrayList <>() );
+		this.setBuffers(
+			new ArrayList <>()
+		);
+		
+		this.setApplication( application );
 	}
 	
+	
+	// Variables
+	private Application application = null;
+	
+	private List <SetupFacade> buffers = null;
+	
+	
+	// Functions: Public
 	public void build()
 		throws Exception
 	{
@@ -33,11 +47,6 @@ public class SetupBuilder
 		}
 	}
 	
-	protected void sortByPriority()
-	{
-		Collections.sort( this.getBuffers() );
-	}
-	
 	public SetupFacade retrieveByIdentity( int idx )
 	{
 		return this.getBuffers().get( idx );
@@ -45,6 +54,13 @@ public class SetupBuilder
 	
 	public void add( SetupFacade facade )
 	{
+		if( facade.getApplication() == null )
+		{
+			facade.setApplication(
+				this.getApplication()
+			);
+		}
+		
 		this.getBuffers().add( facade );
 	}
 	
@@ -53,8 +69,13 @@ public class SetupBuilder
 		this.getBuffers().remove( setupIdx );
 	}
 	
-	// Variables
-	private List <SetupFacade> buffers = null;
+	
+	// Sort
+	protected void sortByPriority()
+	{
+		Collections.sort( this.getBuffers());
+	}
+	
 	
 	// Accessors
 	public List <SetupFacade> getBuffers()
@@ -62,8 +83,18 @@ public class SetupBuilder
 		return this.buffers;
 	}
 	
+	public Application getApplication()
+	{
+		return this.application;
+	}
+	
 	public void setBuffers( List <SetupFacade> buffers )
 	{
 		this.buffers = buffers;
+	}
+	
+	public void setApplication( Application application )
+	{
+		this.application = application;
 	}
 }

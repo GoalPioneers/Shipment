@@ -8,6 +8,12 @@ import com.goalpioneers.shipment.facade.setup.SetupFacade;
 public class SetupByConfiguration
     extends SetupFacade
 {
+    public SetupByConfiguration()
+    {
+        super( null );
+        this.setPriority( 0 );
+    }
+    
     public SetupByConfiguration( Application application )
     {
         super( application );

@@ -7,10 +7,15 @@ import com.goalpioneers.shipment.facade.setup.SetupFacade;
 public class SetupByArguments
     extends SetupFacade
 {
-    public SetupByArguments( Application app )
+    public SetupByArguments()
     {
-        super( app );
+        super( null );
         this.setPriority( 1 );
+    }
+    
+    public SetupByArguments( Application application )
+    {
+        super( application );
     }
     
     @Override
