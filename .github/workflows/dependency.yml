@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout Repository'
-        run: cd code
         uses: actions/checkout@v3
 
       - name: 'Dependency Review'
-        run: cd code
         uses: actions/dependency-review-action@v2
+        with:
+          fail-on-severity: critical
+          allow-licenses: MIT
