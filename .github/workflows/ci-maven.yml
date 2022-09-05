@@ -21,7 +21,7 @@ jobs:
         with:
           path: code/target
           key: ${{ runner.os }}-target
-          
+
       - name: build target
         if: steps.cache-target.outputs.cache-hit != 'true'
         run: bash .build.sh
@@ -36,3 +36,4 @@ jobs:
         run: |
           cd code
           mvn -B package --file pom.xml
+          mvn test
