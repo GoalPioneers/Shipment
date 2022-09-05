@@ -36,8 +36,5 @@ jobs:
         if: steps.cache-codeql-target.outputs.cache-hit != 'true'
         uses: github/codeql-action/autobuild@v2
 
-#      - name: Autobuild
-#        uses: github/codeql-action/autobuild@v2
-
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
