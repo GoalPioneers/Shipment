@@ -1,7 +1,6 @@
-name: "CodeQL"
+name: "CodeQL: Scanning for security issues."
 on:
   [pull_request, push]
-
 jobs:
   analyze:
     name: Analyze
@@ -10,7 +9,6 @@ jobs:
       actions: read
       contents: read
       security-events: write
-
     strategy:
       fail-fast: false
       matrix:
