@@ -26,7 +26,7 @@ public class PublicEntry
 	public PublicEntry()
 	{
 		this( null );
-		
+		System.out.println("test");
 	}
 	
 	/**
