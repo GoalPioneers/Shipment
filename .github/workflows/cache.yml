@@ -1,17 +1,22 @@
-name: Cache
+name: Cache builds.
 on:
   pull_request:
-    branches: ["main"]
-  push:
-    branches: ["main"]
-uses: actions/cache@v3.0.8
-with:
-  # A list of files, directories, and wildcard patterns to cache and restore
-  path:
-  # An explicit key for restoring and saving the cache
-  key:
-  # An ordered list of keys to use for restoring stale cache if no cache hit occurred for key. Note `cache-hit` returns false in this case.
-  restore-keys: # optional
-  # The chunk size used to split up large files during upload, in bytes
-  upload-chunk-size: # optional
+    branches: ["main", "development", "alpha", "production", "published"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache Target
+        id: cache-target
+        uses: actions/cache@v3.0.8
+        with:
+          path: code/target
+          key: ${{ runner.os }}-target
 
+      - name: Cache Source
+        id: cache-source
+        uses: actions/cache@v3.0.8
+        with:
+          path: code/src
+          key: ${{ runner.os }}-source
