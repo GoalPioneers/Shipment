@@ -18,20 +18,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Cache Target
-        id: cache-codeql-target
-        uses: actions/cache@v3.0.8
-        with:
-          path: /home/runner/work/_temp/codeql_databases/java
-          key: ${{ runner.os }}-codeql-target
-
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
 
-      - name: autobuild codeql
-        if: steps.cache-codeql-target.outputs.cache-hit != 'true'
+      - name: AutoBuild CodeQL
         uses: github/codeql-action/autobuild@v2
 
       - name: Perform CodeQL Analysis
