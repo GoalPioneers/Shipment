@@ -7,7 +7,7 @@
 name: 'Dependency Review'
 on:
   pull_request:
-    branches: [""]
+    branches: ["main", "development", "alpha", "production", "published"]
 permissions:
   contents: read
 jobs:
