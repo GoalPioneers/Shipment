@@ -1,16 +1,6 @@
-name: "CodeQL"
+name: "CodeQL: Scanning for security issues."
 on:
-  push:
-    branches: [ 'main',         \
-                "development",  \
-                "alpha",        \
-                'production',   \
-                'publish' ]
-  pull_request:
-    branches: [ "main", "development", "alpha", "production", "publish" ]
-  schedule:
-    - cron: '*/30 */4 */1 * *'
-
+  [pull_request, push]
 jobs:
   analyze:
     name: Analyze
@@ -19,7 +9,6 @@ jobs:
       actions: read
       contents: read
       security-events: write
-
     strategy:
       fail-fast: false
       matrix:
@@ -29,13 +18,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
 
-      - name: Autobuild
+      - name: AutoBuild CodeQL
         uses: github/codeql-action/autobuild@v2
 
       - name: Perform CodeQL Analysis
