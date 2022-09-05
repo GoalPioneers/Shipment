@@ -1,7 +1,11 @@
 name: Cache builds.
 on:
   pull_request:
-    branches: ["main", "development", "alpha", "production", "published"]
+    branches: [ "main",         \
+                "development",  \
+                "alpha",        \
+                "production",   \
+                "published" ]
 jobs:
   build:
     runs-on: ubuntu-latest
