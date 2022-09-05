@@ -1,6 +1,6 @@
 package main.java.com.goalpioneers.shipment.facade;
 
-import main.java.com.goalpioneers.shipment.facade.io.console.ConsoleFacade;
+import main.java.com.goalpioneers.shipment.api.console.ConsoleFacade;
 
 
 /**
