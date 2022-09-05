@@ -1,2 +1,8 @@
-Manifest-Version: 1.0
 Main-Class: main.java.com.goalpioneers.shipment.PublicEntry
+Name: Shipment
+Specification-Title: Shipment
+Specification-Vendor: Goal Pioneers, CVR:41157089
+Specification-Version: 1.0.0 Alpha
+Implementation-Title: main.java.com.goalpioneers.Shipment
+Implementation-Version: 1.0.0 Alpha
+Implementation-Vendor: Goal Pioneers, CVR:41157089
