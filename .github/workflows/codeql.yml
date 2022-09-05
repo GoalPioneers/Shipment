@@ -24,22 +24,20 @@ jobs:
         id: cache-target
         uses: actions/cache@v3.0.8
         with:
-          path: code/target
-          key: ${{ runner.os }}-target
+          path: code
+          key: ${{ runner.os }}-codeql-target
 
-      - name: build target
-        if: steps.cache-target.outputs.cache-hit != 'true'
-        run: |
-          cd code
-          mvn --batch-mode --update-snapshots verify
+      - name: initialise codeql
+        if: steps.cache-codeql-target.outputs.cache-hit != 'true'
+        uses: github/codeql-action/autobuild@v2
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
 
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v2
+#      - name: Autobuild
+#        uses: github/codeql-action/autobuild@v2
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
