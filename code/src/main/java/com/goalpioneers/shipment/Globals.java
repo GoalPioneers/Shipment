@@ -1,4 +1,4 @@
-package main.java.com.goalpioneers.shipment.facade;
+package main.java.com.goalpioneers.shipment;
 
 import main.java.com.goalpioneers.shipment.api.console.ConsoleFacade;
 
@@ -6,7 +6,7 @@ import main.java.com.goalpioneers.shipment.api.console.ConsoleFacade;
 /**
  *
  */
-public abstract class GlobalFacades
+public abstract class Globals
 {
 	private static ConsoleFacade consoleSingleton = null;
 	
@@ -17,12 +17,12 @@ public abstract class GlobalFacades
 	 */
 	public static ConsoleFacade getConsoleSingleton()
 	{
-		if( GlobalFacades.consoleSingleton == null )
+		if( Globals.consoleSingleton == null )
 		{
-			GlobalFacades.consoleSingleton = new ConsoleFacade();
+			Globals.consoleSingleton = new ConsoleFacade();
 		}
 		
-		return GlobalFacades.consoleSingleton;
+		return Globals.consoleSingleton;
 	}
 	
 	/**
@@ -31,6 +31,6 @@ public abstract class GlobalFacades
 	 */
 	public static void setConsoleSingleton( ConsoleFacade consoleSingleton )
 	{
-		GlobalFacades.consoleSingleton = consoleSingleton;
+		Globals.consoleSingleton = consoleSingleton;
 	}
 }
