@@ -6,8 +6,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3
-
-      - name: Cache
+      - uses: actions/checkout@v3
+      - name: Cache Target
         id: cache-target
         uses: actions/cache@v3.0.8
+        with:
+          path: code/target
+          key: ${{ runner.os }}-target
+
+      - name: Cache Source
+        id: cache-source
+        uses: actions/cache@v3.0.8
+        with:
+          path: code/src
+          key: ${{ runner.os }}-source
