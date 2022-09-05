@@ -1,7 +1,7 @@
 name: Pull Request Labeler
 on:
   pull_request:
-    branches: [ "main", "development", "alpha" ]
+    branches: [ "main", "development", "alpha", "production", "publish" ]
 
 jobs:
   triage:
