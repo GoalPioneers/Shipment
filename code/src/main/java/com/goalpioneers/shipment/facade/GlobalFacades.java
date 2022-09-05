@@ -1,8 +1,11 @@
 package main.java.com.goalpioneers.shipment.facade;
 
-
 import main.java.com.goalpioneers.shipment.facade.io.console.ConsoleFacade;
 
+
+/**
+ *
+ */
 public abstract class GlobalFacades
 {
 	private static ConsoleFacade consoleSingleton = null;
@@ -18,7 +21,6 @@ public abstract class GlobalFacades
 		{
 			GlobalFacades.consoleSingleton = new ConsoleFacade();
 		}
-		
 		
 		return GlobalFacades.consoleSingleton;
 	}
