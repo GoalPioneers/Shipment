@@ -30,7 +30,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
 
-      - name: initialise codeql
+      - name: autobuild codeql
         if: steps.cache-codeql-target.outputs.cache-hit != 'true'
         uses: github/codeql-action/autobuild@v2
 
