@@ -31,7 +31,7 @@ public class PublicEntry
 	/**
 	 * 
 	 */
-	public PublicEntry(String[] arguments)
+	public PublicEntry( String[] arguments )
 	{
 		this.setApplication( 
 			new Application() 

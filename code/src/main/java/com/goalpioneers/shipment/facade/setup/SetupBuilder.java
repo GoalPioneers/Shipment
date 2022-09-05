@@ -30,10 +30,16 @@ public class SetupBuilder
 		//throws Exception
 	{
 		this.sortByPriority();
-		
+		this.build_by_index_range( 0, this.getBuffers().size() );
+	}
+	
+	
+	protected void build_by_index_range(int begin, int end)
+	{
 		int idx;
-		for( idx = 0;
-			 idx < this.getBuffers().size();
+		
+		for( idx = begin;
+			 idx < end;
 			 idx ++)
 		{
 			SetupFacade facade = this.getBuffers().get( idx );
