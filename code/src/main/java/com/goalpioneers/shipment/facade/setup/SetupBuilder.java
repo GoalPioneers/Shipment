@@ -12,7 +12,7 @@ public class SetupBuilder
 	public SetupBuilder( Application application)
 	{
 		this.setBuffers(
-			new ArrayList <>()
+			new ArrayList <SetupFacade>()
 		);
 		
 		this.setApplication( application );
