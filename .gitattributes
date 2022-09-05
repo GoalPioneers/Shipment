@@ -9,6 +9,8 @@
 *.sh diff=sh eol=lf
 *.java diff=java eol=lf
 
+# Windows files
+*.bat           text eol=crlf
 
 # Git attributes
 .gitignore text eol=lf
