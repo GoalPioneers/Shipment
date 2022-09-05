@@ -27,14 +27,14 @@ jobs:
           path: code
           key: ${{ runner.os }}-codeql-target
 
-      - name: initialise codeql
-        if: steps.cache-codeql-target.outputs.cache-hit != 'true'
-        uses: github/codeql-action/autobuild@v2
-
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
+
+      - name: initialise codeql
+        if: steps.cache-codeql-target.outputs.cache-hit != 'true'
+        uses: github/codeql-action/autobuild@v2
 
 #      - name: Autobuild
 #        uses: github/codeql-action/autobuild@v2
