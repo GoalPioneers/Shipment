@@ -20,7 +20,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Initializes the CodeQL tools for scanning.
+      - name: Cache Target
+        id: cache-target
+        uses: actions/cache@v3.0.8
+        with:
+          path: code/target
+          key: ${{ runner.os }}-target
+
+      - name: build target
+        if: steps.cache-target.outputs.cache-hit != 'true'
+        run: |
+          cd code
+          mvn --batch-mode --update-snapshots verify
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
