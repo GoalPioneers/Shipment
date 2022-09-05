@@ -5,16 +5,23 @@ public class ConsoleFacade
 {
 	public ConsoleFacade()
 	{
+		this.setInterpreter( new ConsoleInterpreter() );
+		
+	}
 	
+	private ConsoleInterpreter interpreter = null;
+	
+	
+	
+	public ConsoleInterpreter getInterpreter()
+	{
+		return this.interpreter;
 	}
 	
 	
-	
-	
-	// Codes
-	void output( String str )
+	public void setInterpreter( ConsoleInterpreter interpreter )
 	{
-	
+		this.interpreter = interpreter;
 	}
 	
 }

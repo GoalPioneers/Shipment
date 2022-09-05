@@ -8,8 +8,8 @@ import main.java.com.goalpioneers.shipment.api.console.ConsoleFacade;
  */
 public abstract class Globals
 {
+	// Variables
 	private static ConsoleFacade consoleSingleton = null;
-	
 	
 	/**
 	 *
