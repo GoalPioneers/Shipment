@@ -3,13 +3,6 @@ package main.java.com.goalpioneers.shipment.storage.algorithms;
 import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelProperty;
 import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelSettings;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.stream.Stream;
-
 
 public class TravelStorage
 {
@@ -28,29 +21,7 @@ public class TravelStorage
 	// Codes
 	public void list()
 	{
-		Path rp = Paths.get( this.property.getRootPath() );
-		
-		try( Stream <Path> paths = Files.walk( rp ) )
-		{
-			for( Path current : paths.toList() )
-			{
-				File current_file = current.toFile();
-				
-				if( current_file.isDirectory() )
-				{
-				
-				}
-				
-				if( current_file.isFile() )
-				{
-				
-				}
-			}
-		}
-		catch( IOException ex )
-		{
-			System.out.println( ex.toString() );
-		}
+	
 	}
 	
 	
