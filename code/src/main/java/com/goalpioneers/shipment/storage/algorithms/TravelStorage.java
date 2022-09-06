@@ -13,6 +13,30 @@ public class TravelStorage
 	// Variables
 	private TravelProperty property = null;
 	
+	// Codes
+	public void list()
+	{
+	
+	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	public boolean hasChildrenDirectories()
+	{
+		return false;
+	}
+	
+	/**
+	 *
+	 * @return
+	 */
+	public boolean hasChildrenFiles()
+	{
+		return false;
+	}
+	
 	// Accessors
 	public TravelProperty getProperty()
 	{

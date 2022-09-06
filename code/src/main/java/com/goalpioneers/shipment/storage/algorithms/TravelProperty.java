@@ -5,18 +5,19 @@ public class TravelProperty
 {
 	public TravelProperty( String pathRoot )
 	{
-		this.setRoot( pathRoot );
+		this.setRootPath( pathRoot);
 	}
 	
-	private String root = null;
+	private String rootPath = null;
 	
-	public String getRoot()
+	
+	public String getRootPath()
 	{
-		return this.root;
+		return this.rootPath;
 	}
 	
-	public void setRoot( String root )
+	public void setRootPath( String rootPath )
 	{
-		this.root = root;
+		this.rootPath = rootPath;
 	}
 }
