@@ -4,10 +4,10 @@ import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.Trav
 import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelSettings;
 
 
-public class TravelStorage
+public class TravelStorageAPI
 {
 	// Constructors
-	public TravelStorage( String root )
+	public TravelStorageAPI( String root )
 	{
 		this.property = new TravelProperty( root );
 		this.settings = new TravelSettings();
@@ -19,7 +19,7 @@ public class TravelStorage
 	private TravelSettings settings;
 	
 	// Codes
-	public void list()
+	public void setup()
 	{
 	
 	}
