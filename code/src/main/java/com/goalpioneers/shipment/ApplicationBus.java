@@ -14,7 +14,7 @@ public class ApplicationBus
 	//
 	public ApplicationBus()
 	{
-	
+		this( null );
 	}
 	
 	public ApplicationBus( String[] arguments )
