@@ -8,18 +8,23 @@
 	{
 		public CommandLine( String key )
 		{
-			this( key, new ArrayList <CommandOption>() );
+			this( key,
+				  new ArrayList <CommandOption>() );
 		}
 		
-		public CommandLine( String key, List<CommandOption> options)
+		public CommandLine( String key,
+							List<CommandOption> options )
 		{
 			this.setKey( key );
 			this.setOptions( options );
 		}
 		
+		
+		// Variables
 		private String key = null;
 		private List <CommandOption> options = null;
 		
+		// Accessors
 		public List <CommandOption> getOptions()
 		{
 			return this.options;

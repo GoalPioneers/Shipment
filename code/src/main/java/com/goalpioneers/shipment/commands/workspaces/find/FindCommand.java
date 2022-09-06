@@ -1,6 +1,13 @@
 package main.java.com.goalpioneers.shipment.commands.workspaces.find;
 
-public class FindCommand
-{
+import main.java.com.goalpioneers.shipment.commands.CommandLine;
 
+
+public class FindCommand
+		extends CommandLine
+{
+	public FindCommand()
+	{
+		super("");
+	}
 }
