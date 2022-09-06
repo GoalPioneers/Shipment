@@ -8,11 +8,14 @@ public class TravelSettings
 	 */
 	public TravelSettings()
 	{
-	
+		this.setAlgorithm( TravelAlgorithmTypes.Search );
+		this.setTraverseType( TraverseType.BreathFirst );
 	}
 	
 	// Variables
-	private TravelAlgorithmTypes algorithm = TravelAlgorithmTypes.Search;
+	private TravelAlgorithmTypes algorithm;
+	
+	private TraverseType traverseType;
 	
 	// Accessors
 	public TravelAlgorithmTypes getAlgorithm()
@@ -23,5 +26,15 @@ public class TravelSettings
 	public void setAlgorithm( TravelAlgorithmTypes algorithm)
 	{
 		this.algorithm = algorithm;
+	}
+	
+	public TraverseType getTraverseType()
+	{
+		return this.traverseType;
+	}
+	
+	public void setTraverseType(TraverseType traverseType)
+	{
+		this.traverseType = traverseType;
 	}
 }
