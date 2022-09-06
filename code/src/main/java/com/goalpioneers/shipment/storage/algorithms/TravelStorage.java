@@ -12,6 +12,7 @@ public class TravelStorage
 	
 	// Variables
 	private TravelProperty property = null;
+	private TravelSettings settings = null;
 	
 	// Codes
 	public void list()
@@ -43,8 +44,18 @@ public class TravelStorage
 		return this.property;
 	}
 	
+	public TravelSettings getSettings()
+	{
+		return this.settings;
+	}
+	
 	public void setProperty( TravelProperty property )
 	{
 		this.property = property;
+	}
+	
+	public void setSettings( TravelSettings settings )
+	{
+		this.settings = settings;
 	}
 }
