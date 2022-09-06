@@ -1,6 +1,5 @@
 package main.java.com.goalpioneers.shipment;
 
-
 import main.java.com.goalpioneers.shipment.domain.Application;
 import main.java.com.goalpioneers.shipment.facade.setup.SetupBuilder;
 import main.java.com.goalpioneers.shipment.facade.setup.SetupFacade;
