@@ -12,6 +12,6 @@ public class TravelTest
 	{
 		String pathRoot = "/home/madsen/dataset/custom001";
 		TravelStorage travel = new TravelStorage( pathRoot );
-		
+		travel.list();
 	}
 }
