@@ -1,4 +1,4 @@
-package main.java.com.goalpioneers.shipment.storage.algorithms;
+package main.java.com.goalpioneers.shipment.storage.algorithms.configuration;
 
 
 public class TravelProperty

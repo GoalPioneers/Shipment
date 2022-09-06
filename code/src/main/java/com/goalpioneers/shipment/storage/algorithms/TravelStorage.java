@@ -1,5 +1,8 @@
 package main.java.com.goalpioneers.shipment.storage.algorithms;
 
+import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelProperty;
+import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelSettings;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

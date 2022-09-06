@@ -1,7 +1,7 @@
 package main.java.com.goalpioneers.shipment.storage.algorithms;
 
 
-public enum TravelAlgorithm
+public enum TravelAlgorithmTypes
 {
 	None,
 	Search,
