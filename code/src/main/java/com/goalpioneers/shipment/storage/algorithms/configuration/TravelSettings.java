@@ -1,8 +1,6 @@
 package main.java.com.goalpioneers.shipment.storage.algorithms.configuration;
 
 
-import main.java.com.goalpioneers.shipment.storage.algorithms.TravelAlgorithmTypes;
-
 public class TravelSettings
 {
 	/**
