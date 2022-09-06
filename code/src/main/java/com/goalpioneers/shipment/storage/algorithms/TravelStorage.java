@@ -40,15 +40,16 @@ public class TravelStorage
 				
 				if( current_file.isFile() )
 				{
-					
+				
 				}
 			}
 		}
 		catch( IOException ex )
 		{
-		
+			System.out.println( ex.toString() );
 		}
 	}
+	
 	
 	/**
 	 *
