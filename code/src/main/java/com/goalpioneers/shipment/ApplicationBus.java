@@ -1,6 +1,5 @@
 package main.java.com.goalpioneers.shipment;
 
-
 import main.java.com.goalpioneers.shipment.domain.Application;
 import main.java.com.goalpioneers.shipment.facade.setup.SetupBuilder;
 import main.java.com.goalpioneers.shipment.facade.setup.SetupFacade;
@@ -15,7 +14,7 @@ public class ApplicationBus
 	//
 	public ApplicationBus()
 	{
-	
+		this( null );
 	}
 	
 	public ApplicationBus( String[] arguments )
@@ -41,6 +40,7 @@ public class ApplicationBus
 	
 	// Variables
 	private Application application = null;
+	
 	private SetupBuilder builder = null;
 	
 	

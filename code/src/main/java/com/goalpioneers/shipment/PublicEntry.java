@@ -21,7 +21,17 @@
 		 */
 		public static void main( String[] arguments )
 		{
-			ApplicationBus bus = new ApplicationBus( arguments );
+			BusAPI bus;
+			
+			if( arguments.length == 0 )
+			{
+				bus = new ApplicationBus( null );
+			}
+			else
+			{
+				bus = new ApplicationBus( arguments );
+			}
+			
 			bus.setup();
 			bus.run();
 		}
