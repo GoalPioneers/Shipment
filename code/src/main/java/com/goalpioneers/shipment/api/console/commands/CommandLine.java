@@ -1,4 +1,4 @@
-	package main.java.com.goalpioneers.shipment.commands;
+	package main.java.com.goalpioneers.shipment.api.console.commands;
 	
 	import java.util.ArrayList;
 	import java.util.List;

@@ -40,6 +40,7 @@ public class ApplicationBus
 	
 	// Variables
 	private Application application = null;
+	
 	private SetupBuilder builder = null;
 	
 	
