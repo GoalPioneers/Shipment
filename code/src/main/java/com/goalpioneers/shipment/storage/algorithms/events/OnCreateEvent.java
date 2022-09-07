@@ -1,7 +1,7 @@
-package main.java.com.goalpioneers.shipment.storage.algorithms.events;
-
-
-public interface OnCreateEvent
-{
-
-}
+	package main.java.com.goalpioneers.shipment.storage.algorithms.events;
+	
+	
+	public interface OnCreateEvent
+	{
+	
+	}

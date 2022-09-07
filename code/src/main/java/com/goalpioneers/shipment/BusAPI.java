@@ -1,9 +1,9 @@
-package main.java.com.goalpioneers.shipment;
-
-
-public interface BusAPI
-{
-	public abstract void setup();
+	package main.java.com.goalpioneers.shipment;
 	
-	public abstract void run();
-}
+	
+	public interface BusAPI
+	{
+		public abstract void setup();
+		
+		public abstract void run();
+	}

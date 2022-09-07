@@ -1,34 +1,34 @@
-package main.java.com.goalpioneers.shipment.facade.setup.cache;
+    package main.java.com.goalpioneers.shipment.facade.setup.cache;
 
 
-import main.java.com.goalpioneers.shipment.domain.Application;
-import main.java.com.goalpioneers.shipment.facade.setup.SetupFacade;
-
-
-public class SetupByCache
-    extends SetupFacade
-{
-    public SetupByCache()
-    {
-        super( null );
-        this.setName( "Setup by Cache" );
-        this.setPriority( 2 );
-    }
+    import main.java.com.goalpioneers.shipment.domain.Application;
+    import main.java.com.goalpioneers.shipment.facade.setup.SetupFacade;
     
-    public SetupByCache( Application application)
-    {
-        super( application );
-        this.setName( "Setup by Cache" );
-        this.setPriority( 2 );
-    }
     
-    /**
-     *
-     * @return
-     */
-    @Override
-    public final boolean setup()
+    public class SetupByCache
+        extends SetupFacade
     {
-        return this.isDone();
+        public SetupByCache()
+        {
+            super( null );
+            this.setName( "Setup by Cache" );
+            this.setPriority( 2 );
+        }
+        
+        public SetupByCache( Application application)
+        {
+            super( application );
+            this.setName( "Setup by Cache" );
+            this.setPriority( 2 );
+        }
+        
+        /**
+         *
+         * @return
+         */
+        @Override
+        public final boolean setup()
+        {
+            return this.isDone();
+        }
     }
-}

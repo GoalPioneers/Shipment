@@ -13,7 +13,7 @@ public class CommandIdentifier
 		this.setValue( value );
 	}
 	
-	// 
+	//
 	private String value = null;
 	
 	// Accessors
