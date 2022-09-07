@@ -1,3 +1,7 @@
+	/**
+	 * Interactive console
+	 *
+	 */
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
 	
