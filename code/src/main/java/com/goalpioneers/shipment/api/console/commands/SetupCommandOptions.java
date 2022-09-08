@@ -14,14 +14,19 @@
 		private CommandIdentifier currentIdentifier = null;
 		
 		// Code
-		public final CommandOption generate()
+		public final CommandOption generate( String value )
 		{
-			return null;
+			if( this.isCurrentIdentifierEmpty() )
+			{
+				return new CommandOption(null, value);
+			}
+			
+			return this.generate( value, this.getCurrentIdentifier() );
 		}
 		
-		public final CommandOption generate( CommandIdentifier identifier )
+		public final CommandOption generate( String value, CommandIdentifier identifier )
 		{
-			return null;
+			return new CommandOption( identifier, value );
 		}
 		
 		// Accessors
@@ -33,5 +38,17 @@
 		public final void setCurrentIdentifier( CommandIdentifier currentIdentifier )
 		{
 			this.currentIdentifier = currentIdentifier;
+		}
+		
+		// States
+		public final boolean isCurrentIdentifierEmpty()
+		{
+			return this.currentIdentifier == null;
+		}
+		
+		@Override
+		public String toString()
+		{
+			return super.toString();
 		}
 	}

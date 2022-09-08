@@ -3,9 +3,10 @@
 	
 	public class CommandOption
 	{
-		public CommandOption( CommandIdentifier identifier )
+		public CommandOption( CommandIdentifier identifier, String value )
 		{
 			this.setIdentifier( identifier );
+			this.setValue( value );
 		}
 		
 		// Variables
