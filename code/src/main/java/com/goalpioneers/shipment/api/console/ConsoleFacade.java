@@ -23,18 +23,28 @@
 		
 		
 		// Accessors
+		/**
+		 *
+		 * @return
+		 */
 		public final ConsoleInterpreter getInterpreter()
 		{
 			return this.interpreter;
 		}
 		
-		
+		/**
+		 *
+		 * @param interpreter
+		 */
 		public final void setInterpreter( ConsoleInterpreter interpreter )
 		{
 			this.interpreter = interpreter;
 		}
 		
-		
+		/**
+		 *
+		 * @return
+		 */
 		@Override
 		public String toString()
 		{

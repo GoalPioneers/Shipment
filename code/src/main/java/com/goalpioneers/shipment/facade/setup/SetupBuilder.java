@@ -7,8 +7,15 @@
 	import java.util.List;
 	
 	
+	/**
+	 *
+	 */
 	public class SetupBuilder
 	{
+		/**
+		 *
+		 * @param application
+		 */
 		public SetupBuilder( Application application)
 		{
 			this.setBuffers(
@@ -26,6 +33,9 @@
 		
 		
 		// Functions: Public
+		/**
+		 *
+		 */
 		public final void build()
 			//throws Exception
 		{
@@ -33,7 +43,11 @@
 			this.build_by_index_range( 0, this.getBuffers().size() );
 		}
 		
-		
+		/**
+		 *
+		 * @param begin
+		 * @param end
+		 */
 		protected void build_by_index_range(int begin, int end)
 		{
 			int idx;
@@ -150,7 +164,7 @@
 				 idx++ )
 			{
 				SetupFacade sf = this.buffers.get( idx );
-				System.out.println(sf.getName());
+				System.out.println( sf.getName() );
 			}
 			
 			return super.toString();

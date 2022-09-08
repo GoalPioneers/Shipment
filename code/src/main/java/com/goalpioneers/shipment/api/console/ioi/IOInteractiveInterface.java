@@ -11,12 +11,19 @@
 	public class IOInteractiveInterface
 			implements IOInterface
 	{
+		/**
+		 *
+		 */
 		public IOInteractiveInterface()
 		{
 		
 		}
 		
 		
+		/**
+		 *
+		 * @return
+		 */
 		@Override
 		public String toString()
 		{

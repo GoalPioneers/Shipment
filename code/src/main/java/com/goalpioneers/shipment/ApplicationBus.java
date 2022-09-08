@@ -8,15 +8,24 @@
 	import main.java.com.goalpioneers.shipment.facade.setup.configuration.SetupByConfiguration;
 	
 	
+	/**
+	 *
+	 */
 	public class ApplicationBus
 		implements BusAPI
 	{
-		//
+		/**
+		 *
+		 */
 		public ApplicationBus()
 		{
 			this( null );
 		}
 		
+		/**
+		 *
+		 * @param arguments
+		 */
 		public ApplicationBus( String[] arguments )
 		{
 			this.setApplication(
@@ -45,6 +54,9 @@
 		
 		
 		// code
+		/**
+		 *
+		 */
 		public final void setup()
 		{
 			this.getBuilder().add( new SetupByConfiguration() );

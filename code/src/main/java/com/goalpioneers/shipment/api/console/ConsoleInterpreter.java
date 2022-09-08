@@ -6,6 +6,9 @@
 	 */
 	public class ConsoleInterpreter
 	{
+		/**
+		 *
+		 */
 		public ConsoleInterpreter()
 		{
 		

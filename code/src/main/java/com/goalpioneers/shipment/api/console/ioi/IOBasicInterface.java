@@ -22,11 +22,19 @@
 		private IOProperties properties = null;
 		
 		// Accessors
+		/**
+		 *
+		 * @return
+		 */
 		public final IOProperties getProperties()
 		{
 			return this.properties;
 		}
 		
+		/**
+		 *
+		 * @param properties
+		 */
 		public final void setProperties( IOProperties properties)
 		{
 			this.properties = properties;

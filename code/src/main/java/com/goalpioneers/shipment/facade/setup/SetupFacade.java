@@ -1,23 +1,37 @@
     package main.java.com.goalpioneers.shipment.facade.setup;
     
     import main.java.com.goalpioneers.shipment.domain.Application;
+
     
-    
+    /**
+     *
+     */
     public abstract class SetupFacade
         implements Comparable<SetupFacade>
     {
+        /**
+         *
+         */
         public SetupFacade()
         {
             this( null );
         }
-        
-        public SetupFacade( Application application)
+    
+        /**
+         *
+         * @param application
+         */
+        public SetupFacade( Application application )
         {
             this.setApplication( application );
         }
         
         
         // Extend
+        /**
+         *
+         * @return
+         */
         public abstract boolean setup();
     
         
@@ -27,15 +41,24 @@
         private Application application;
         
         private int priority = 0;
+        
         private boolean isDone = false;
         
         
         // Accessors
+        /**
+         *
+         * @return
+         */
         public final String getName()
         {
             return this.name;
         }
-        
+    
+        /**
+         *
+         * @param name
+         */
         protected final void setName( String name )
         {
             this.name = name;

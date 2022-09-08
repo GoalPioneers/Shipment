@@ -1,6 +1,9 @@
 	package main.java.com.goalpioneers.shipment.storage.algorithms.configuration;
 	
-	
+
+	/**
+	 *
+	 */
 	public class TravelSettings
 	{
 		/**
@@ -18,22 +21,38 @@
 		private TraverseType traverseType;
 		
 		// Accessors
+		/**
+		 *
+		 * @return
+		 */
 		public TravelAlgorithmTypes getAlgorithm()
 		{
 			return this.algorithm;
 		}
 		
-		public void setAlgorithm( TravelAlgorithmTypes algorithm)
+		/**
+		 *
+		 * @param algorithm
+		 */
+		public void setAlgorithm( TravelAlgorithmTypes algorithm )
 		{
 			this.algorithm = algorithm;
 		}
 		
+		/**
+		 *
+		 * @return
+		 */
 		public TraverseType getTraverseType()
 		{
 			return this.traverseType;
 		}
 		
-		public void setTraverseType(TraverseType traverseType)
+		/**
+		 *
+		 * @param traverseType
+		 */
+		public void setTraverseType( TraverseType traverseType )
 		{
 			this.traverseType = traverseType;
 		}

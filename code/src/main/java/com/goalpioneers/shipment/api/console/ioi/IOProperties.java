@@ -10,12 +10,20 @@
 	public class IOProperties
 	{
 		// Constructors
+		/**
+		 *
+		 */
 		public IOProperties()
 		{
 			this( System.in,
 				  System.out );
 		}
 		
+		/**
+		 *
+		 * @param in
+		 * @param out
+		 */
 		public IOProperties( InputStream in,
 							 PrintStream out )
 		{
@@ -29,26 +37,46 @@
 		
 		
 		// Accessors
+		/**
+		 *
+		 * @return
+		 */
 		public InputStream getIn()
 		{
 			return this.in;
 		}
 		
+		/**
+		 *
+		 * @return
+		 */
 		public PrintStream getOut()
 		{
 			return this.out;
 		}
 		
+		/**
+		 *
+		 * @param in
+		 */
 		protected void setIn( InputStream in )
 		{
 			this.in = in;
 		}
 		
+		/**
+		 *
+		 * @param out
+		 */
 		protected void setOut( PrintStream out )
 		{
 			this.out = out;
 		}
 		
+		/**
+		 *
+		 * @return
+		 */
 		@Override
 		public String toString()
 		{

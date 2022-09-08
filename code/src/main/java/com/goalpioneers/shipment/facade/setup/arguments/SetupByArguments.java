@@ -2,18 +2,30 @@
 
     import main.java.com.goalpioneers.shipment.domain.Application;
     import main.java.com.goalpioneers.shipment.facade.setup.SetupFacade;
+
     
-    
+    /**
+     *
+     */
     public class SetupByArguments
         extends SetupFacade
     {
+        /**
+         *
+         * @param arguments
+         */
         public SetupByArguments( String[] arguments )
         {
             super( null );
             this.setName( "Setup by Arguments" );
             this.setPriority( 1 );
         }
-        
+    
+        /**
+         *
+         * @param application
+         * @param Arguments
+         */
         public SetupByArguments( Application application,
                                  String[] Arguments )
         {

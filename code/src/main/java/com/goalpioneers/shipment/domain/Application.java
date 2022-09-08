@@ -24,12 +24,22 @@
 				new Procedure()
 			);
 		}
-	
+		
+		// Variables
+		private Procedure procedure = null;
+		
+		
+		/**
+		 *
+		 */
 		public void initialise()
 		{
 	
 		}
-	
+		
+		/**
+		 *
+		 */
 		public void execution()
 		{
 			while( this.procedure.isToContinue() )
@@ -37,23 +47,31 @@
 				this.procedure.execute();
 			}
 		}
-	
+		
+		/**
+		 *
+		 */
 		public void clean()
 		{
 	
 		}
 	
-		// Variables
-		private Procedure procedure = null;
-	
 		// Accessors
 			// Getters
+		/**
+		 *
+		 * @return
+		 */
 		public Procedure getProcedure()
 		{
 			return this.procedure;
 		}
 	
 			// Setters
+		/**
+		 *
+		 * @param procedure
+		 */
 		public void setProcedure( Procedure procedure )
 		{
 			this.procedure = procedure;
