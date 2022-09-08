@@ -1,15 +1,26 @@
-	package main.java.com.goalpioneers.shipment.api.console;
+	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
 	import java.io.InputStream;
 	import java.io.PrintStream;
 	
 	
-	public class ConsoleProperties
+	/**
+	 *
+	 */
+	public class IOProperties
 	{
-		public ConsoleProperties()
+		// Constructors
+		public IOProperties()
 		{
-			this.setIn( System.in );
-			this.setOut( System.out );
+			this( System.in,
+				  System.out );
+		}
+		
+		public IOProperties( InputStream in,
+							 PrintStream out )
+		{
+			this.setIn( in );
+			this.setOut( out );
 		}
 		
 		// Variables
@@ -36,5 +47,11 @@
 		protected void setOut( PrintStream out )
 		{
 			this.out = out;
+		}
+		
+		@Override
+		public String toString()
+		{
+			return super.toString();
 		}
 	}

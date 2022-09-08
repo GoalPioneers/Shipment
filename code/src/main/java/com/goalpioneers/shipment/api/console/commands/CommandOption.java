@@ -13,24 +13,32 @@
 		
 		private String value = null;
 		
+		
 		// Accessors
-		public CommandIdentifier getIdentifier()
+		public final CommandIdentifier getIdentifier()
 		{
 			return this.identifier;
 		}
 		
-		public void setIdentifier( CommandIdentifier identifier )
+		public final void setIdentifier( CommandIdentifier identifier )
 		{
 			this.identifier = identifier;
 		}
 		
-		public String getValue()
+		public final String getValue()
 		{
 			return this.value;
 		}
 		
-		public void setValue( String value )
+		public final void setValue( String value )
 		{
 			this.value = value;
+		}
+		
+		// Object Extensions
+		@Override
+		public final String toString()
+		{
+			return super.toString();
 		}
 	}

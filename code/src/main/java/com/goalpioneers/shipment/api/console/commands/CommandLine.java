@@ -4,14 +4,28 @@
 	import java.util.List;
 	
 	
+	/**
+	 *
+	 */
 	public abstract class CommandLine
 	{
+		// Constructors
+		/**
+		 *
+		 * @param key
+		 */
 		public CommandLine( String key )
 		{
 			this( key,
 				  new ArrayList <CommandOption>() );
 		}
 		
+		
+		/**
+		 *
+		 * @param key
+		 * @param options
+		 */
 		public CommandLine( String key,
 							List<CommandOption> options )
 		{

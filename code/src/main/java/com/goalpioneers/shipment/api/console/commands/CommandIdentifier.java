@@ -3,9 +3,10 @@ package main.java.com.goalpioneers.shipment.api.console.commands;
 
 public class CommandIdentifier
 {
+	// Constructors
 	public CommandIdentifier()
 	{
-	
+		this( null );
 	}
 	
 	public CommandIdentifier( String value )
@@ -13,8 +14,9 @@ public class CommandIdentifier
 		this.setValue( value );
 	}
 	
-	//
-	private String value = null;
+	// Variables
+	private String value;
+	
 	
 	// Accessors
 	public final String getValue()
@@ -25,5 +27,11 @@ public class CommandIdentifier
 	public final void setValue( String value )
 	{
 		this.value = value.toLowerCase();
+	}
+	
+	@Override
+	public final String toString()
+	{
+		return super.toString();
 	}
 }
