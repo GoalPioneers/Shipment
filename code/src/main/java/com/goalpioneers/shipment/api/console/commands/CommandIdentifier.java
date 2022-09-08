@@ -1,63 +1,68 @@
-/**
- *
- */
-package main.java.com.goalpioneers.shipment.api.console.commands;
-
-
-/**
- *
- */
-public class CommandIdentifier
-{
-	// Constructors
 	/**
-	 *
+	 * Author: Goal Pioneers, Kent v. Madsen
+	 * Contact: Kent.vejrup.madsen@goalpioneers.com
+	 * Company: Goal-Pioneers, 41157089
+	 * Links
+	 ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
+	 ** Issues: https://github.com/GoalPioneers/Shipment/issues
 	 */
-	public CommandIdentifier()
-	{
-		this( null );
-	}
-	
-	/**
-	 *
-	 * @param value
-	 */
-	public CommandIdentifier( String value )
-	{
-		this.setValue( value );
-	}
-	
-	// Variables
-	private String value;
-	
-	
-	// Accessors
-	/**
-	 *
-	 * @return
-	 */
-	public final String getValue()
-	{
-		return this.value;
-	}
-	
-	/**
-	 *
-	 * @param value
-	 */
-	public final void setValue( String value )
-	{
-		this.value = value.toLowerCase();
-	}
+	package main.java.com.goalpioneers.shipment.api.console.commands;
 	
 	
 	/**
 	 *
-	 * @return
 	 */
-	@Override
-	public final String toString()
+	public class CommandIdentifier
 	{
-		return super.toString();
+		// Constructors
+		/**
+		 *
+		 */
+		public CommandIdentifier()
+		{
+			this( null );
+		}
+		
+		/**
+		 *
+		 * @param value
+		 */
+		public CommandIdentifier( String value )
+		{
+			this.setValue( value );
+		}
+		
+		// Variables
+		private String value;
+		
+		
+		// Accessors
+		/**
+		 *
+		 * @return
+		 */
+		public final String getValue()
+		{
+			return this.value;
+		}
+		
+		/**
+		 *
+		 * @param value
+		 */
+		public final void setValue( String value )
+		{
+			this.value = value.toLowerCase();
+		}
+		
+		
+		/**
+		 *
+		 * @return
+		 */
+		@Override
+		public final String toString()
+		{
+			return super.toString();
+		}
 	}
-}
