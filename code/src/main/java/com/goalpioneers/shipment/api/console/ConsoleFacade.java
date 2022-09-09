@@ -20,11 +20,16 @@
 		 */
 		public ConsoleFacade()
 		{
+			this.setParser(
+				new CommandParser()
+			);
+			
 			this.setInterpreter(
 				new CommandInterpreter()
 			);
 			
 		}
+		
 		
 		// Variables
 		private CommandParser parser = null;
