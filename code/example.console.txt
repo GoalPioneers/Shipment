@@ -1,0 +1,3 @@
+Shipment | --{command-key} -{identifier} "{value}"
+Shipment | -{command-key} -{identifier} {value}
+Shipment | {command-key} -{identifier} '{value}'

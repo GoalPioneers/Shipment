@@ -1,24 +1,46 @@
+	/**
+	 * Author: Goal Pioneers, Kent v. Madsen
+	 * Contact: Kent.vejrup.madsen@goalpioneers.com
+	 * Company: Goal-Pioneers, 41157089
+	 * Links
+	 ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
+	 ** Issues: https://github.com/GoalPioneers/Shipment/issues
+	 */
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
-
-	import main.java.com.goalpioneers.shipment.api.console.ConsoleProperties;
 	
 	
+	/**
+	 *
+	 */
 	public class IOBasicInterface
 		implements IOInterface
 	{
+		/**
+		 *
+		 */
 		public IOBasicInterface()
 		{
-			this.setProperties( new ConsoleProperties() );
+			this.setProperties( new IOProperties() );
 		}
 		
-		private ConsoleProperties properties = null;
+		// Variables
+		private IOProperties properties = null;
 		
-		public ConsoleProperties getProperties()
+		// Accessors
+		/**
+		 *
+		 * @return
+		 */
+		public final IOProperties getProperties()
 		{
-			return properties;
+			return this.properties;
 		}
 		
-		public void setProperties( ConsoleProperties properties )
+		/**
+		 *
+		 * @param properties
+		 */
+		public final void setProperties( IOProperties properties )
 		{
 			this.properties = properties;
 		}
