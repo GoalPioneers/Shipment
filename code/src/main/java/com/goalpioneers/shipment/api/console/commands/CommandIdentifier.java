@@ -6,28 +6,34 @@
 	 ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
 	 ** Issues: https://github.com/GoalPioneers/Shipment/issues
 	 */
-	package main.java.com.goalpioneers.shipment.api.console;
+	package main.java.com.goalpioneers.shipment.api.console.commands;
 	
 	
 	/**
 	 *
 	 */
-	public class ConsoleFacade
+	public class CommandIdentifier
 	{
 		// Constructors
 		/**
 		 *
 		 */
-		public ConsoleFacade()
+		public CommandIdentifier()
 		{
-			this.setInterpreter(
-				new ConsoleInterpreter()
-			);
-			
+			this( null );
+		}
+		
+		/**
+		 *
+		 * @param value
+		 */
+		public CommandIdentifier( String value )
+		{
+			this.setValue( value );
 		}
 		
 		// Variables
-		private ConsoleInterpreter interpreter = null;
+		private String value;
 		
 		
 		// Accessors
@@ -35,26 +41,33 @@
 		 *
 		 * @return
 		 */
-		public final ConsoleInterpreter getInterpreter()
+		public final String getValue()
 		{
-			return this.interpreter;
+			return this.value;
 		}
 		
 		/**
 		 *
-		 * @param interpreter
+		 * @param value
 		 */
-		public final void setInterpreter( ConsoleInterpreter interpreter )
+		public final void setValue( String value )
 		{
-			this.interpreter = interpreter;
+			if( value == null )
+			{
+				this.value = null;
+				return;
+			}
+			
+			this.value = value.toLowerCase();
 		}
+		
 		
 		/**
 		 *
 		 * @return
 		 */
 		@Override
-		public String toString()
+		public final String toString()
 		{
 			return super.toString();
 		}
