@@ -20,7 +20,7 @@
 		 */
 		public IOBasicInterface()
 		{
-			this.setProperties( new IOProperties());
+			this.setProperties( new IOProperties() );
 		}
 		
 		// Variables
@@ -40,7 +40,7 @@
 		 *
 		 * @param properties
 		 */
-		public final void setProperties( IOProperties properties)
+		public final void setProperties( IOProperties properties )
 		{
 			this.properties = properties;
 		}

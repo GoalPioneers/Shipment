@@ -22,8 +22,10 @@
 		
 		}
 		
+		
 		// Variables
 		private CommandIdentifier currentIdentifier = null;
+		
 		
 		// Code
 		/**
@@ -35,10 +37,12 @@
 		{
 			if( this.isCurrentIdentifierEmpty() )
 			{
-				return new CommandOption(null, value);
+				return new CommandOption( null,
+										  value );
 			}
 			
-			return this.generate( value, this.getCurrentIdentifier() );
+			return this.generate( value,
+								  this.getCurrentIdentifier() );
 		}
 		
 		/**
