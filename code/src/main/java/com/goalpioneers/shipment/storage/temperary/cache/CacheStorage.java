@@ -8,7 +8,9 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.temperary.cache;
 	
+	import main.java.com.goalpioneers.annotations.classDocument;
 	import main.java.com.goalpioneers.annotations.copyright;
+	import main.java.com.goalpioneers.annotations.versioning;
 	
 	
 	/**
@@ -17,6 +19,8 @@
 	 *
 	 */
 	@copyright()
+	@classDocument()
+	@versioning()
 	public class CacheStorage
 	{
 		/**

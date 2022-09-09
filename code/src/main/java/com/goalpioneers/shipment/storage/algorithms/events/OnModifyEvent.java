@@ -8,7 +8,9 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.algorithms.events;
 	
+	import main.java.com.goalpioneers.annotations.classDocument;
 	import main.java.com.goalpioneers.annotations.copyright;
+	import main.java.com.goalpioneers.annotations.versioning;
 	
 	
 	/**
@@ -16,6 +18,8 @@
 	 * @author Goal Pioneers
 	 */
 	@copyright()
+	@classDocument()
+	@versioning()
 	public interface OnModifyEvent
 	{
 	

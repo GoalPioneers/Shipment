@@ -7,15 +7,19 @@
      ** Issues: https://github.com/GoalPioneers/Shipment/issues
      */
     package main.java.com.goalpioneers.shipment.domain;
-    
-    import main.java.com.goalpioneers.annotations.copyright;
 
-    
+    import main.java.com.goalpioneers.annotations.classDocument;
+    import main.java.com.goalpioneers.annotations.copyright;
+    import main.java.com.goalpioneers.annotations.versioning;
+
+
     /**
      * @author Kent v. Madsen
      * @author Goal Pioneers
      */
     @copyright()
+    @classDocument()
+    @versioning()
     public class Procedure
     {
         public Procedure()

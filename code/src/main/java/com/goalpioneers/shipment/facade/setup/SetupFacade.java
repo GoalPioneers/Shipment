@@ -8,7 +8,9 @@
      */
     package main.java.com.goalpioneers.shipment.facade.setup;
 
+    import main.java.com.goalpioneers.annotations.classDocument;
     import main.java.com.goalpioneers.annotations.copyright;
+    import main.java.com.goalpioneers.annotations.versioning;
     import main.java.com.goalpioneers.shipment.domain.Application;
 
 
@@ -17,6 +19,8 @@
      * @author Goal Pioneers
      */
     @copyright()
+    @classDocument()
+    @versioning()
     public abstract class SetupFacade
         implements Comparable<SetupFacade>
     {

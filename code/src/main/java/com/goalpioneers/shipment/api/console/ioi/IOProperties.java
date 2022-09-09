@@ -8,6 +8,10 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
+	import main.java.com.goalpioneers.annotations.classDocument;
+	import main.java.com.goalpioneers.annotations.copyright;
+	import main.java.com.goalpioneers.annotations.versioning;
+	
 	import java.io.InputStream;
 	import java.io.PrintStream;
 	
@@ -16,6 +20,9 @@
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
+	@classDocument()
+	@versioning()
 	public class IOProperties
 	{
 		// Constructors
