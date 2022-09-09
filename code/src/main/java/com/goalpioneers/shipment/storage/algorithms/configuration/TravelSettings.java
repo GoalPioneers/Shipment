@@ -1,40 +1,67 @@
-package main.java.com.goalpioneers.shipment.storage.algorithms.configuration;
+	/**
+	 * Author: Goal Pioneers, Kent v. Madsen
+	 * Contact: Kent.vejrup.madsen@goalpioneers.com
+	 * Company: Goal-Pioneers, 41157089
+	 * Links
+	 ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
+	 ** Issues: https://github.com/GoalPioneers/Shipment/issues
+	 */
+	package main.java.com.goalpioneers.shipment.storage.algorithms.configuration;
+	
 
-
-public class TravelSettings
-{
 	/**
 	 *
 	 */
-	public TravelSettings()
+	public class TravelSettings
 	{
-		this.setAlgorithm( TravelAlgorithmTypes.Search );
-		this.setTraverseType( TraverseType.BreathFirst );
+		/**
+		 *
+		 */
+		public TravelSettings()
+		{
+			this.setAlgorithm( TravelAlgorithmTypes.Search );
+			this.setTraverseType( TraverseType.BreathFirst );
+		}
+		
+		// Variables
+		private TravelAlgorithmTypes algorithm;
+		
+		private TraverseType traverseType;
+		
+		// Accessors
+		/**
+		 *
+		 * @return
+		 */
+		public TravelAlgorithmTypes getAlgorithm()
+		{
+			return this.algorithm;
+		}
+		
+		/**
+		 *
+		 * @param algorithm
+		 */
+		public void setAlgorithm( TravelAlgorithmTypes algorithm )
+		{
+			this.algorithm = algorithm;
+		}
+		
+		/**
+		 *
+		 * @return
+		 */
+		public TraverseType getTraverseType()
+		{
+			return this.traverseType;
+		}
+		
+		/**
+		 *
+		 * @param traverseType
+		 */
+		public void setTraverseType( TraverseType traverseType )
+		{
+			this.traverseType = traverseType;
+		}
 	}
-	
-	// Variables
-	private TravelAlgorithmTypes algorithm;
-	
-	private TraverseType traverseType;
-	
-	// Accessors
-	public TravelAlgorithmTypes getAlgorithm()
-	{
-		return this.algorithm;
-	}
-	
-	public void setAlgorithm( TravelAlgorithmTypes algorithm)
-	{
-		this.algorithm = algorithm;
-	}
-	
-	public TraverseType getTraverseType()
-	{
-		return this.traverseType;
-	}
-	
-	public void setTraverseType(TraverseType traverseType)
-	{
-		this.traverseType = traverseType;
-	}
-}
