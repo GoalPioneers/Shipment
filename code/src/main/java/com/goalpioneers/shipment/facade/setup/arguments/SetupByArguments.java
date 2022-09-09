@@ -8,6 +8,7 @@
      */
     package main.java.com.goalpioneers.shipment.facade.setup.arguments;
 
+    import main.java.com.goalpioneers.annotations.copyright;
     import main.java.com.goalpioneers.shipment.domain.Application;
     import main.java.com.goalpioneers.shipment.facade.setup.SetupFacade;
 
@@ -16,6 +17,7 @@
      * @author Kent vejrup Madsen
      * @author Goal Pioneers
      */
+    @copyright()
     public class SetupByArguments
         extends SetupFacade
     {

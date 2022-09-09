@@ -8,11 +8,14 @@
 	 */
 	package main.java.com.goalpioneers.shipment.domain;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
+	
 	
 	/**
 	 * @author Kent v. Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public class Application
 	{
 		/**

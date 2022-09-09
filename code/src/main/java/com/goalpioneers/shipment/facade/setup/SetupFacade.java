@@ -7,7 +7,8 @@
      ** Issues: https://github.com/GoalPioneers/Shipment/issues
      */
     package main.java.com.goalpioneers.shipment.facade.setup;
-    
+
+    import main.java.com.goalpioneers.annotations.copyright;
     import main.java.com.goalpioneers.shipment.domain.Application;
 
 
@@ -15,6 +16,7 @@
      * @author Kent vejrup Madsen
      * @author Goal Pioneers
      */
+    @copyright()
     public abstract class SetupFacade
         implements Comparable<SetupFacade>
     {

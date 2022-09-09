@@ -8,11 +8,14 @@
 	 */
 	package main.java.com.goalpioneers.shipment;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
+	
 	
 	/**
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public interface BusAPI
 	{
 		/**

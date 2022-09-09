@@ -8,11 +8,14 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.persistence.head;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
+	
 	
 	/**
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public class HeadStorage
 	{
 		/**

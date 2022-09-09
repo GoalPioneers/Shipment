@@ -7,12 +7,15 @@
      ** Issues: https://github.com/GoalPioneers/Shipment/issues
      */
     package main.java.com.goalpioneers.shipment.domain.commands;
+    
+    import main.java.com.goalpioneers.annotations.copyright;
 
-
+    
     /**
      * @author Kent vejrup Madsen
      * @author Goal Pioneers
      */
+    @copyright()
     public abstract class SignalProcedure
     {
         // Variables

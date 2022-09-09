@@ -8,6 +8,7 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
 	import main.java.com.goalpioneers.shipment.api.console.ioi.IOInterface;
 	
 	
@@ -15,6 +16,7 @@
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public class ConsoleBuilder
 	{
 		public ConsoleBuilder()

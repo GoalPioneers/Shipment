@@ -7,7 +7,8 @@
 	 ** Issues: https://github.com/GoalPioneers/Shipment/issues
 	 */
 	package main.java.com.goalpioneers.shipment.api.console;
-
+	
+	import main.java.com.goalpioneers.annotations.copyright;
 	import main.java.com.goalpioneers.shipment.api.console.commands.SetupCommandOptions;
 	
 	
@@ -15,6 +16,7 @@
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public class CommandParser
 	{
 		public CommandParser()

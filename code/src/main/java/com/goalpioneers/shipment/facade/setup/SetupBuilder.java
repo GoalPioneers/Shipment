@@ -8,6 +8,7 @@
 	 */
 	package main.java.com.goalpioneers.shipment.facade.setup;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
 	import main.java.com.goalpioneers.shipment.domain.Application;
 	
 	import java.util.ArrayList;
@@ -19,6 +20,7 @@
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public class SetupBuilder
 	{
 		/**

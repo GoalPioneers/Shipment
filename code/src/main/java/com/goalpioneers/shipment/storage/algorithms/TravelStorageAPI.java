@@ -8,6 +8,7 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.algorithms;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
 	import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelProperty;
 	import main.java.com.goalpioneers.shipment.storage.algorithms.configuration.TravelSettings;
 	import main.java.com.goalpioneers.shipment.storage.algorithms.implementation.SearcherImplementation;
@@ -19,6 +20,7 @@
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public class TravelStorageAPI
 	{
 		/**

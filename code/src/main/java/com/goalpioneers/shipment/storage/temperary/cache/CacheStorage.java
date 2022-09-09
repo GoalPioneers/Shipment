@@ -8,11 +8,15 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.temperary.cache;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
+	
 	
 	/**
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
+	 *
 	 */
+	@copyright()
 	public class CacheStorage
 	{
 		/**

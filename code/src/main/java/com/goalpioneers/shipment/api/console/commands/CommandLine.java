@@ -8,6 +8,8 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console.commands;
 	
+	import main.java.com.goalpioneers.annotations.copyright;
+	
 	import java.util.ArrayList;
 	import java.util.List;
 	
@@ -16,6 +18,7 @@
 	 * @author Kent vejrup Madsen
 	 * @author Goal Pioneers
 	 */
+	@copyright()
 	public abstract class CommandLine
 	{
 		// Constructors
