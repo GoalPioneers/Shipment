@@ -47,7 +47,8 @@
 		 * @param identifier
 		 * @return
 		 */
-		public final CommandOption generate( String value, CommandIdentifier identifier )
+		public final CommandOption generate( String value,
+											 CommandIdentifier identifier )
 		{
 			return new CommandOption( identifier, value );
 		}

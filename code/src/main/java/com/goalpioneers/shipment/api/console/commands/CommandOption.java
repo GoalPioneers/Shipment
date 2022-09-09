@@ -19,7 +19,8 @@
 		 * @param identifier
 		 * @param value
 		 */
-		public CommandOption( CommandIdentifier identifier, String value )
+		public CommandOption( CommandIdentifier identifier,
+							  String value )
 		{
 			this.setIdentifier( identifier );
 			this.setValue( value );
