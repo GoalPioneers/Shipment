@@ -82,6 +82,12 @@
 		 */
 		public final void setKey( String key )
 		{
+			if( key == null )
+			{
+				this.key = null;
+				return;
+			}
+			
 			this.key = key.toLowerCase();
 		}
 		

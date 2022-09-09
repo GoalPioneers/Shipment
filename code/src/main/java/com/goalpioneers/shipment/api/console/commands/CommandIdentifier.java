@@ -52,6 +52,12 @@
 		 */
 		public final void setValue( String value )
 		{
+			if( value == null )
+			{
+				this.value = null;
+				return;
+			}
+			
 			this.value = value.toLowerCase();
 		}
 		

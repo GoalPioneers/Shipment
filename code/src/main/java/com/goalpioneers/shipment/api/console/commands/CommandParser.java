@@ -14,29 +14,30 @@ public class CommandParser
 	
 	
 	// Accessors
-	public void setInterpreter( CommandInterpreter interpreter )
+	public final void setInterpreter( CommandInterpreter interpreter )
 	{
 		this.interpreter = interpreter;
 	}
 	
-	public CommandInterpreter getInterpreter()
+	public final CommandInterpreter getInterpreter()
 	{
 		return this.interpreter;
 	}
 	
-	public SetupCommandOptions getSetup()
+	public final SetupCommandOptions getSetup()
 	{
 		return this.setup;
 	}
 	
-	public void setSetup( SetupCommandOptions setup )
+	public final void setSetup( SetupCommandOptions setup )
 	{
 		this.setup = setup;
 	}
 	
+	
 	//
 	@Override
-	public String toString()
+	public final String toString()
 	{
 		return super.toString();
 	}
