@@ -82,7 +82,7 @@
 		 */
 		public final void setKey( String key )
 		{
-			this.key = key;
+			this.key = key.toLowerCase();
 		}
 		
 		// States
