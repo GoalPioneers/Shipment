@@ -1,11 +1,25 @@
-package main.java.com.goalpioneers.shipment.storage.algorithms;
-
-
-public class TestStorageAlgorithm
-{
-	public static void main( String[] tests )
+	/**
+	 * Author: Goal Pioneers, Kent v. Madsen
+	 * Contact: Kent.vejrup.madsen@goalpioneers.com
+	 * Company: Goal-Pioneers, 41157089
+	 * Links
+	 ** License: MIT License(https://github.com/GoalPioneers/Shipment/blob/main/LICENSE.md)
+	 ** Issues: https://github.com/GoalPioneers/Shipment/issues
+	 */
+	package main.java.com.goalpioneers.shipment.storage.algorithms;
+	
+	/**
+	 *
+	 */
+	public class TestStorageAlgorithm
 	{
-		TravelStorageAPI api = new TravelStorageAPI("/home/madsen/dataset/custom001");
-		api.setup();
+		/**
+		 *
+		 * @param tests
+		 */
+		public static void main( String[] tests )
+		{
+			TravelStorageAPI api = new TravelStorageAPI("/home/madsen/dataset/custom001");
+			api.setup();
+		}
 	}
-}

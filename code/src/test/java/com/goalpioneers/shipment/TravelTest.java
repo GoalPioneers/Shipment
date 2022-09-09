@@ -1,8 +1,14 @@
-package test.java.com.goalpioneers.shipment;
+	/**
+	 *
+	 */
+	package test.java.com.goalpioneers.shipment;
+	
 
-
-public class TravelTest
-{
-
-
-}
+	/**
+	 *
+	 */
+	public class TravelTest
+	{
+	
+	
+	}
