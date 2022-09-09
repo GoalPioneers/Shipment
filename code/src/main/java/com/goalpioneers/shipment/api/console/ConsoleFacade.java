@@ -9,6 +9,8 @@
 	package main.java.com.goalpioneers.shipment.api.console;
 	
 	
+	import main.java.com.goalpioneers.shipment.api.console.commands.CommandParser;
+	
 	/**
 	 *
 	 */
@@ -21,13 +23,15 @@
 		public ConsoleFacade()
 		{
 			this.setInterpreter(
-				new ConsoleInterpreter()
+				new CommandInterpreter()
 			);
 			
 		}
 		
 		// Variables
-		private ConsoleInterpreter interpreter = null;
+		private CommandParser parser = null;
+		
+		private CommandInterpreter interpreter = null;
 		
 		
 		// Accessors
@@ -35,7 +39,7 @@
 		 *
 		 * @return
 		 */
-		public final ConsoleInterpreter getInterpreter()
+		public final CommandInterpreter getInterpreter()
 		{
 			return this.interpreter;
 		}
@@ -44,9 +48,28 @@
 		 *
 		 * @param interpreter
 		 */
-		public final void setInterpreter( ConsoleInterpreter interpreter )
+		public final void setInterpreter( CommandInterpreter interpreter )
 		{
 			this.interpreter = interpreter;
+		}
+		
+		/**
+		 *
+		 *
+		 * @return
+		 */
+		public final CommandParser getParser()
+		{
+			return this.parser;
+		}
+		
+		/**
+		 *
+		 * @param parser
+		 */
+		public final void setParser( CommandParser parser )
+		{
+			this.parser = parser;
 		}
 		
 		/**

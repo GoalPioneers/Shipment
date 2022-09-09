@@ -23,8 +23,10 @@
 			this.setProperties( new IOProperties() );
 		}
 		
+		
 		// Variables
 		private IOProperties properties = null;
+		
 		
 		// Accessors
 		/**
@@ -43,5 +45,17 @@
 		public final void setProperties( IOProperties properties )
 		{
 			this.properties = properties;
+		}
+		
+		
+		//
+		/**
+		 *
+		 * @return
+		 */
+		@Override
+		public String toString()
+		{
+			return super.toString();
 		}
 	}

@@ -12,12 +12,12 @@
 	/**
 	 *
 	 */
-	public class ConsoleInterpreter
+	public class CommandInterpreter
 	{
 		/**
 		 *
 		 */
-		public ConsoleInterpreter()
+		public CommandInterpreter()
 		{
 		
 		}
