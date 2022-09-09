@@ -8,9 +8,10 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.algorithms.implementation;
 	
-
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class SearcherImplementation
 		extends TravelAlgorithm

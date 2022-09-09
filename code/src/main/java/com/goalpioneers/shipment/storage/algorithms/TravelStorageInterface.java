@@ -8,9 +8,10 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.algorithms;
 	
-
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public interface TravelStorageInterface
 	{

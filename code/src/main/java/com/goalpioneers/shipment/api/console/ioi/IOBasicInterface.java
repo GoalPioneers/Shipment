@@ -8,11 +8,12 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
-	
 	import main.java.com.goalpioneers.shipment.api.console.ConsoleType;
 	
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class IOBasicInterface
 		implements IOInterface
@@ -22,18 +23,14 @@
 		 */
 		public IOBasicInterface()
 		{
-			this.setProperties( new IOProperties() );
+			this.setProperties(
+				new IOProperties()
+			);
 		}
 		
 		
 		// Variables
 		private IOProperties properties = null;
-		
-		@Override
-		public ConsoleType getType()
-		{
-			return ConsoleType.Basic;
-		}
 		
 		// Accessors
 		/**
@@ -52,6 +49,13 @@
 		public final void setProperties( IOProperties properties )
 		{
 			this.properties = properties;
+		}
+		
+		//
+		@Override
+		public ConsoleType getType()
+		{
+			return ConsoleType.Basic;
 		}
 		
 		

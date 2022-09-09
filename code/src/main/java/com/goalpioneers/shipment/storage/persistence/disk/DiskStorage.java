@@ -8,9 +8,10 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.persistence.disk;
 	
-
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class DiskStorage
 	{

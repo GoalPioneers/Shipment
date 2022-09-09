@@ -8,9 +8,10 @@
 	 */
 	package main.java.com.goalpioneers.shipment.storage.memory;
 	
-
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class InMemoryStorage
 	{

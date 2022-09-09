@@ -13,7 +13,8 @@
 	
 	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public abstract class CommandLine
 	{

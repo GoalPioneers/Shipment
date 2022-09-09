@@ -8,9 +8,10 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console.commands;
 	
-
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class CommandOption
 	{

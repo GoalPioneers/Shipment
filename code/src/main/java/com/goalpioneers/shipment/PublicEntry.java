@@ -7,10 +7,11 @@
   ** Issues: https://github.com/GoalPioneers/Shipment/issues
   */
 	package main.java.com.goalpioneers.shipment;
-	
-	
+
+
 	/**
-	 * @author Kent v. Madsen
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class PublicEntry
 	{

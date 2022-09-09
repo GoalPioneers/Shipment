@@ -11,8 +11,10 @@
 	
 	import main.java.com.goalpioneers.shipment.api.console.ConsoleType;
 	
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public interface IOInterface
 	{

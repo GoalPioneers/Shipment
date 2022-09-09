@@ -17,7 +17,8 @@
 	
 	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class ApplicationBus
 		implements BusAPI

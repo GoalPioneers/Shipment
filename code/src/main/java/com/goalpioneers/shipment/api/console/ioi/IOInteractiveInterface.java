@@ -8,11 +8,14 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
-	
 	import main.java.com.goalpioneers.shipment.api.console.ConsoleType;
 	
+	import java.io.Console;
+	
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class IOInteractiveInterface
 			implements IOInterface
@@ -22,13 +25,28 @@
 		 */
 		public IOInteractiveInterface()
 		{
-		
+			this.console = System.console();
 		}
 		
+		//
+		private Console console = null;
+		
+		//
 		@Override
 		public ConsoleType getType()
 		{
 			return ConsoleType.Interactive;
+		}
+		
+		// Accessors
+		public Console getConsole()
+		{
+			return this.console;
+		}
+		
+		public void setConsole( Console console )
+		{
+			this.console = console;
 		}
 		
 		//

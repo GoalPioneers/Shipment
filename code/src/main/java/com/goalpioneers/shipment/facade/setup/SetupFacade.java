@@ -10,9 +10,10 @@
     
     import main.java.com.goalpioneers.shipment.domain.Application;
 
-    
+
     /**
-     *
+     * @author Kent vejrup Madsen
+     * @author Goal Pioneers
      */
     public abstract class SetupFacade
         implements Comparable<SetupFacade>

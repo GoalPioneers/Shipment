@@ -14,8 +14,10 @@
 	import main.java.com.goalpioneers.shipment.storage.algorithms.implementation.TravelAlgorithm;
 	import main.java.com.goalpioneers.shipment.storage.algorithms.implementation.WatcherImplementation;
 	
+	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class TravelStorageAPI
 	{

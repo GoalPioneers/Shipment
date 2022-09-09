@@ -13,7 +13,8 @@
 	
 	
 	/**
-	 *
+	 * @author Kent vejrup Madsen
+	 * @author Goal Pioneers
 	 */
 	public class IOProperties
 	{
@@ -41,6 +42,7 @@
 		
 		// Variables
 		private InputStream in = null;
+		
 		private PrintStream out = null;
 		
 		
