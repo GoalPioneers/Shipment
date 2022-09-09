@@ -9,6 +9,8 @@
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
 	
+	import main.java.com.goalpioneers.shipment.api.console.ConsoleType;
+	
 	/**
 	 *
 	 */
@@ -23,6 +25,11 @@
 		
 		}
 		
+		@Override
+		public ConsoleType getType()
+		{
+			return ConsoleType.Interactive;
+		}
 		
 		//
 		/**

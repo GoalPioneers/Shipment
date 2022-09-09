@@ -9,6 +9,8 @@
 	package main.java.com.goalpioneers.shipment.api.console;
 	
 	
+	import main.java.com.goalpioneers.shipment.api.console.ioi.IOInterface;
+	
 	/**
 	 *
 	 */
@@ -20,6 +22,8 @@
 		 */
 		public ConsoleFacade()
 		{
+			this.setConsole( null );
+			
 			this.setParser(
 				new CommandParser()
 			);
@@ -32,9 +36,12 @@
 		
 		
 		// Variables
+		private IOInterface console = null;
+		
 		private CommandParser parser = null;
 		
 		private CommandInterpreter interpreter = null;
+		
 		
 		
 		// Accessors
@@ -73,6 +80,24 @@
 		public final void setParser( CommandParser parser )
 		{
 			this.parser = parser;
+		}
+		
+		/**
+		 *
+		 * @return
+		 */
+		public final IOInterface getConsole()
+		{
+			return this.console;
+		}
+		
+		/**
+		 *
+		 * @param console
+		 */
+		public final void setConsole( IOInterface console )
+		{
+			this.console = console;
 		}
 		
 		/**

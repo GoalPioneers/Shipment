@@ -8,11 +8,17 @@
 	 */
 	package main.java.com.goalpioneers.shipment.api.console.ioi;
 	
-
+	
+	import main.java.com.goalpioneers.shipment.api.console.ConsoleType;
+	
 	/**
 	 *
 	 */
 	public interface IOInterface
 	{
-	
+		/**
+		 *
+		 * @return
+		 */
+		public ConsoleType getType();
 	}
